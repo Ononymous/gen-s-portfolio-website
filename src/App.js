@@ -1,9 +1,9 @@
-import ColorModeChanger from "./ColorModeChanger"
+import Navbar from "./Navbar"
 
 function App() {
   return (
     <div>
-      <ColorModeChanger/>
+      <Navbar/>
     </div>
   );
 }
