@@ -22,7 +22,7 @@ import { useColorMode } from '@chakra-ui/react';
 
 // add some space before the stack
 
-function PhotoStack(props) {
+function PhotoStack() {
     const { colorMode } = useColorMode();
     return (
         <Flex align={'center'} justifyContent={"center"}>
@@ -40,7 +40,7 @@ function PhotoStack(props) {
                 w={'full'}>
                 <Box
                     position={'relative'}
-                    height={{xl:'300px', md:'280px', base:'250px'}}
+                    height={{xl:'350px', md:'280px', base:'250px'}}
                     rounded={'10'}
                     boxShadow={'dark-lg'}
                     width={{xl:"full", md:"80%", base:"70%"}}
@@ -59,7 +59,7 @@ function PhotoStack(props) {
                 <Stack flex={1} spacing={{ base: 5, md: 10 }}>
                     <Heading
                     lineHeight={1.1}
-                    fontWeight={600}
+                    fontWeight={700}
                     fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
                         <Text
                             as={'span'}
