@@ -6,8 +6,8 @@ import {
   useColorModeValue,
   useColorMode,
 } from '@chakra-ui/react';
-import logo from './logo.svg';
-import darklogo from './darklogo.svg';
+import logo from './images/logo.svg';
+import darklogo from './images/darklogo.svg';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 // a navbar that has a logo, some buttons for links, and a toggle for dark mode

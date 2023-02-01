@@ -17,8 +17,9 @@ import {FaLinkedinIn} from 'react-icons/fa'
 import {FiGithub, FiMail} from 'react-icons/fi'
 import {IoNewspaperOutline} from 'react-icons/io5'
 
-import photo from './photo.jpg';
+import photo from './images/photo.jpg';
 import { useColorMode } from '@chakra-ui/react';
+import Resume from './images/Resume.pdf'
 
 // add some space before the stack
 
@@ -96,13 +97,12 @@ function PhotoStack() {
                             _hover={{ bg: 'orange.500' }}/>
                         </Link>
 
-                        <Link href="/#" isExternal>
                         <IconButton 
                             icon={<IoNewspaperOutline/>}
                             colorScheme={'orange'}
                             bg={'orange.400'}
-                            _hover={{ bg: 'orange.500' }}/>
-                        </Link>
+                            _hover={{ bg: 'orange.500' }}
+                            onClick={(event) => { event.preventDefault(); window.open(Resume); }}/>
                         </>:
 
                         <>
@@ -128,12 +128,13 @@ function PhotoStack() {
                             variant={'outline'}/>
                         </Link>
 
-                        <Link href="/#" isExternal>
                         <IconButton 
                             icon={<IoNewspaperOutline/>}
                             colorScheme={'orange'}
-                            variant={'outline'}/>
-                        </Link></>}
+                            variant={'outline'}
+                            onClick={(event) => { event.preventDefault(); window.open(Resume); }}/>
+                            
+                        </>}
 
                     </Stack>
                 </Stack>
