@@ -1,12 +1,12 @@
 .now{
-  background-image: url("./images/Now1.svg") !important;
+  background-image: url("./images/Now-l.svg") !important;
 
   background-position: center;
   background-size: 60%;
   background-repeat: no-repeat;
 }
 .now-dark{
-  background-image: url("./images/Now1.svg") !important;
+  background-image: url("./images/Now-d.svg") !important;
 
   background-position: center;
   background-size: 60%;
@@ -14,14 +14,14 @@
 }
 
 .past{
-  background-image: url("./images/Past1.svg") !important;
+  background-image: url("./images/Past-l.svg") !important;
 
   background-position: center;
   background-size: 60%;
   background-repeat: no-repeat;
 }
 .past-dark{
-  background-image: url("./images/Past1.svg") !important;
+  background-image: url("./images/Past-d.svg") !important;
 
   background-position: center;
   background-size: 60%;
@@ -29,14 +29,14 @@
 }
 
 .future{
-  background-image: url("./images/Future1.svg") !important;
+  background-image: url("./images/Future-l.svg") !important;
 
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
 }
 .future-dark{
-  background-image: url("./images/Future1.svg") !important;
+  background-image: url("./images/Future-d.svg") !important;
 
   background-position: center;
   background-size: 80%;
