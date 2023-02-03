@@ -61,14 +61,14 @@ function PhotoStack() {
                     <Heading
                     lineHeight={1.1}
                     fontWeight={700}
-                    fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
+                    fontSize={{ base: '3xl', md: '4xl', lg: '6xl' }}>
                         <Text
                             as={'span'}
                             position={'relative'}>
                             Gen Tamada
                         </Text>
                     </Heading>
-                    <Text color={'gray.500'}>
+                    <Text color={'gray.500'} fontSize={{ md: 'lg', lg: 'xl' }}>
                     Currently a student at the University of California Santa Barbara, studying Computer Science. I am passionate about technology and its impact on society.
                     </Text>
                     <Stack direction={'row'} spacing={3}>      

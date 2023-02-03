@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
 }
 .now-dark{
-  background-image: url("./images/Now.svg") !important;
+  background-image: url("./images/Now1.svg") !important;
 
   background-position: center;
   background-size: 60%;
@@ -21,7 +21,7 @@
   background-repeat: no-repeat;
 }
 .past-dark{
-  background-image: url("./images/Past.svg") !important;
+  background-image: url("./images/Past1.svg") !important;
 
   background-position: center;
   background-size: 60%;
@@ -36,7 +36,7 @@
   background-repeat: no-repeat;
 }
 .future-dark{
-  background-image: url("./images/Future.svg") !important;
+  background-image: url("./images/Future1.svg") !important;
 
   background-position: center;
   background-size: 80%;
