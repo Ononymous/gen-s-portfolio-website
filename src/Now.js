@@ -1,10 +1,47 @@
 import React from 'react';
-import { Text, Heading, Box, UnorderedList, ListItem, Link } from "@chakra-ui/react";
+import { Text, Heading, Box, Accordion } from "@chakra-ui/react";
 import "./App.css"
 import { useColorMode } from "@chakra-ui/react";
+import NowAccordion from './NowAccordion';
 
 function Now(){
     const { colorMode } = useColorMode();
+    const accordionListData = [
+        {
+            name: "Data Science Club 2022-2023 Project Pipeline:",
+            link: "https://datascienceucsb.org/",
+            linkText: "Link to Project Pipeline",
+            listText: [
+                "My team and I are making a web app that would read photo-scanned text out loud in human-like voice",
+                "Help people listen to text instead of having to read them",
+                "This would benefit people who reading disabilities and people who want to read paperback books in an audiobook fashion",
+                "Users would upload photo scans of texts in English; the app would convert the scans into text and read the transcript in human-like voice"
+            ]
+        },
+        {
+            name: "GauchoCourses App Development:",
+            link: "https://github.com/data-science-ucsb/gauchocourses",
+            linkText: "Link to Github",
+            listText: [
+                "A UCSB Data Science Club project, and I am joining the team that develop the app",
+                "A quarterly course planner that allows students to see possible schedule combinations for the classes they want to take",
+                "Using Spring Framework for the backend and Vue.js for frontend",
+                "This would benefit students by allowing them to efficiently explore more available options for their class schedule"
+            ]
+        },
+        {
+            name: "Coders SB Club 2022-2023 Winter quarter Project Series:",
+            link: "https://coderssb.com/",
+            linkText: "Link to Club Website",
+            listText: [
+                "A phone app using React Native",
+                "🚧🏗️ In progress... 🚧",
+            ]
+        }
+    ]
+    const AccordionList = accordionListData.map((data) =>
+        <NowAccordion name={data.name} link={data.link} linkText={data.linkText} listText={data.listText}/>
+    )
     return(
         <Box 
         w={{xl:"60%", md:"70%", base:"90%"}} 
@@ -42,10 +79,13 @@ function Now(){
                     <Text
                     as={'span'}
                     position={'relative'}>
-                    Activities
+                    Ongoing Activities
                     </Text>
                 </Heading>
-                <Link 
+                <Accordion allowToggle>
+                    {AccordionList}
+                </Accordion>
+                {/* <Link 
                 isExternal
                 color='teal.300'
                 fontSize={{ base: 'lg', lg: 'xl' }}
@@ -74,6 +114,29 @@ function Now(){
                 fontSize={{ base: 'lg', lg: 'xl' }}
                 fontWeight={500}
                 marginBottom={3}
+                href="https://github.com/data-science-ucsb/gauchocourses">
+                GauchoCourses app:
+                </Link>
+                <UnorderedList spacing={1} fontSize={{ base: 'md', lg: 'lg' }} marginBottom={{xl:"7", md:"5", base:"4"}}>
+                    <ListItem>
+                        A UCSB Data Science Club project, and I am joining the team that develop the app
+                    </ListItem>
+                    <ListItem>
+                        A quarterly course planner that allows students to see possible schedule combinations for the classes they want to take
+                    </ListItem>
+                    <ListItem>
+                        Using Spring Framework for the backend and Vue.js for frontend
+                    </ListItem>
+                    <ListItem>
+                        This would benefit students by allowing them to efficiently explore more available options for their class schedule 
+                    </ListItem>
+                </UnorderedList>
+                <Link 
+                isExternal
+                color='teal.300'
+                fontSize={{ base: 'lg', lg: 'xl' }}
+                fontWeight={500}
+                marginBottom={3}
                 href="https://coderssb.com/">
                 Coders SB Club 2022-2023 Winter quarter Project Series:
                 </Link>
@@ -84,7 +147,7 @@ function Now(){
                     <ListItem>
                     🚧🏗️ In progress... 🚧
                     </ListItem>
-                </UnorderedList>
+                </UnorderedList> */}
                 <Heading
                 lineHeight={1.5}
                 fontWeight={600}
