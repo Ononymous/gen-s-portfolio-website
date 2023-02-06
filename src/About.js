@@ -3,7 +3,7 @@ import React from "react";
 import { Flex, Box } from "@chakra-ui/react";
 import "./App.css"
 import Now from "./Now.js";
-import Past from "./Past.js";
+import Experiences from "./Experiences.js";
 import Future from "./Future.js";
 import Skills from "./Skills.js";
 
@@ -22,7 +22,7 @@ function About() {
             <Now/>
             <Box className="spacer"></Box>
             <Box className="spacer"></Box>
-            <Past/>
+            <Experiences/>
             <Box className="spacer"></Box>
             <Box className="spacer"></Box>
             <Skills/>

@@ -13,15 +13,30 @@
   background-repeat: no-repeat;
 }
 
-.past{
-  background-image: url("./images/Past-l.svg") !important;
+.experiences{
+  background-image: url("./images/Experiences.svg") !important;
+
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+.experiences-dark{
+  background-image: url("./images/Experiences-d.svg") !important;
+
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+.skills{
+  background-image: url("./images/Skills.svg") !important;
 
   background-position: center;
   background-size: 60%;
   background-repeat: no-repeat;
 }
-.past-dark{
-  background-image: url("./images/Past-d.svg") !important;
+.skills-dark{
+  background-image: url("./images/Skills-d.svg") !important;
 
   background-position: center;
   background-size: 60%;

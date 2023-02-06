@@ -7,12 +7,12 @@ function Past(){
     const { colorMode } = useColorMode();
     return(
         <Box 
-        w={{xl:"60%", md:"70%", base:"90%"}} 
+        w={{xl:"55%", lg:"68%" , md:"82%", base:"95%"}} 
         py={{xl:"10", md:"7", base:"4"}}
         px={{xl:"10", md:"7", base:"4"}} 
         boxShadow="dark-lg" 
         rounded={"2xl"}
-        className={colorMode==="light"?"past":"past-dark"}>
+        className={colorMode==="light"?"experiences":"experiences-dark"}>
             <Box className="normal">
                 <Heading
                 lineHeight={1.5}
