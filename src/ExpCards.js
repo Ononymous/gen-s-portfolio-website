@@ -4,22 +4,27 @@ import { Card, Code, CardBody, Heading, Text, Image, Link, Stack } from '@chakra
 function ExpCards({ title, description, image, links, tags }){
     const linkMap = links.map((link, index) =>
         <>
-        <Link 
+        {'['}<Link 
         id={index}
-        border={1}
         isExternal
         color='teal.300'
-        href={link.url}>{link.text}</Link><br/>
+        href={link.url}>{link.text}</Link>{'] '}
         </>
     )
+
     const tagMap = tags.map((tag, index) =>
         <Code
         id={index}
         ml="2">{tag}</Code>
     )
+
+    const textMap = description.map((text, index) =>
+        <Text id={index} pt='1'>{text}</Text>
+    )
+    
     return(
         <Card
-        direction={{ base: 'column', sm: 'row' }}
+        direction={{ base: 'column', md: 'row' }}
         overflow='hidden'
         variant='outline'
         rounded={"2xl"}
@@ -29,7 +34,8 @@ function ExpCards({ title, description, image, links, tags }){
         >
             <Image
             objectFit='cover'
-            maxW={{ base: '100%', sm: '200px' }}
+            w={{ base: '100%', md: '45%' }}
+            maxH={{ base: '30vh', md: '100%' }}
             src={image}
             alt='card image'
             />
@@ -37,11 +43,10 @@ function ExpCards({ title, description, image, links, tags }){
             <Stack>
                 <CardBody>
                     <Heading size='md'>{title}</Heading>
-
-                    <Text py='2'>{description}</Text>
+                    {textMap}
                     {linkMap}
-                    <br/>
-                    <Text fontSize="sm">Tech Stack: {tagMap}</Text>
+                    
+                    <Text py='1' fontSize="sm">Tags: {tagMap}</Text>
                 </CardBody>
             </Stack>
         </Card>
