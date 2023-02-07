@@ -39,8 +39,8 @@ function Now(){
             ]
         }
     ]
-    const AccordionList = accordionListData.map((data) =>
-        <NowAccordion name={data.name} link={data.link} linkText={data.linkText} listText={data.listText}/>
+    const AccordionList = accordionListData.map((data, index) =>
+        <NowAccordion id={index} name={data.name} link={data.link} linkText={data.linkText} listText={data.listText}/>
     )
     return(
         <Box 

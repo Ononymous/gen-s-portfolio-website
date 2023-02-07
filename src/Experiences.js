@@ -109,9 +109,6 @@ function Past(){
                 </Stack>
                 <Box w="100%" minHeight={"40vh"} maxHeight={"65vh"} rounded="2xl" mt="5" overflow="auto">
                     <CardResult/>
-                    <CardResult/>
-                    <CardResult/>
-                    <CardResult/>
                 </Box>
             </Box>
 
