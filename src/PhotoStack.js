@@ -71,71 +71,33 @@ function PhotoStack() {
                     <Text color={'gray.500'} fontSize={{ md: 'lg', lg: 'xl' }}>
                     Currently a student at the University of California Santa Barbara, studying Computer Science. I am passionate about technology and its impact on society.
                     </Text>
-                    <Stack direction={'row'} spacing={3}>      
-                    {colorMode==="light"?<>
+                    <Stack direction={'row'} spacing={3}>
                         <Link href="https://www.linkedin.com/in/gen-tamada-59a7b8220/" isExternal>
                         <IconButton 
                             colorScheme={'orange'}
-                            bg={'orange.400'}
-                            icon={<FaLinkedinIn/>}
-                            _hover={{ bg: 'orange.500' }}/>
-                        </Link>
-                        
-                        <Link href="https://github.com/Ononymous" isExternal>
-                        <IconButton 
-                            colorScheme={'orange'}
-                            bg={'orange.400'}
-                            icon={<FiGithub/>}
-                            _hover={{ bg: 'orange.500' }}/>
-                        </Link>
-                        
-                        <Link href="mailto:gtamada@cs.ucsb.edu" isExternal>
-                        <IconButton 
-                            icon={<FiMail/>}
-                            colorScheme={'orange'}
-                            bg={'orange.400'}
-                            _hover={{ bg: 'orange.500' }}/>
-                        </Link>
-
-                        <IconButton 
-                            icon={<IoNewspaperOutline/>}
-                            colorScheme={'orange'}
-                            bg={'orange.400'}
-                            _hover={{ bg: 'orange.500' }}
-                            onClick={(event) => { event.preventDefault(); window.open(Resume); }}/>
-                        </>:
-
-                        <>
-                        
-                        <Link href="https://www.linkedin.com/in/gen-tamada-59a7b8220/" isExternal>
-                        <IconButton 
-                            variant={'outline'}
-                            colorScheme={'orange'}
+                            variant={colorMode==="light"? 'solid': 'outline'}
                             icon={<FaLinkedinIn/>}/>
                         </Link>
                         
                         <Link href="https://github.com/Ononymous" isExternal>
                         <IconButton 
                             colorScheme={'orange'}
-                            icon={<FiGithub/>}
-                            variant={'outline'}/>
+                            variant={colorMode==="light"? 'solid': 'outline'}
+                            icon={<FiGithub/>}/>
                         </Link>
                         
                         <Link href="mailto:gtamada@cs.ucsb.edu" isExternal>
                         <IconButton 
+                            variant={colorMode==="light"? 'solid': 'outline'}
                             icon={<FiMail/>}
-                            colorScheme={'orange'}
-                            variant={'outline'}/>
+                            colorScheme={'orange'}/>
                         </Link>
 
                         <IconButton 
                             icon={<IoNewspaperOutline/>}
+                            variant={colorMode==="light"? 'solid': 'outline'}
                             colorScheme={'orange'}
-                            variant={'outline'}
                             onClick={(event) => { event.preventDefault(); window.open(Resume); }}/>
-                            
-                        </>}
-
                     </Stack>
                 </Stack>
             </Stack>
