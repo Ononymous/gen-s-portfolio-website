@@ -23,7 +23,7 @@ function Now(){
             link: "https://github.com/data-science-ucsb/gauchocourses",
             linkText: "Link to Github",
             listText: [
-                "A UCSB Data Science Club project, and I am joining the team that develop the app",
+                "A UCSB Data Science Club project, and I am joining its backend team",
                 "A quarterly course planner that allows students to see possible schedule combinations for the classes they want to take",
                 "Using Spring Framework for the backend and Vue.js for frontend",
                 "This would benefit students by allowing them to efficiently explore more available options for their class schedule"
