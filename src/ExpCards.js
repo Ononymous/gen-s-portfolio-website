@@ -34,13 +34,13 @@ function ExpCards({ title, description, image, links, tags }){
         >
             <Image
             objectFit='cover'
-            w={{ base: '100%', md: '45%' }}
+            w={{ base: '100%', md: '40%' }}
             maxH={{ base: '30vh', md: '100%' }}
             src={image}
             alt='card image'
             />
 
-            <Stack>
+            <Stack flex={1}>
                 <CardBody>
                     <Heading size='md'>{title}</Heading>
                     {textMap}

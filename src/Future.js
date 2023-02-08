@@ -25,7 +25,7 @@ function Future(){
                 </Text>
             </Heading>
             <Text>
-                I am currently a student at the University of California, Irvine, pursuing a Bachelor of Science in Computer Science. I am expected to graduate in June 2022.
+                I am planning an gaining experiences while as an undergraduate, and applying to a full-time job after graduation. If I gain interest in a certain field that can use my skills, I might consider pursuing higher degrees.
             </Text>
             <Heading
             lineHeight={1.5}
@@ -40,22 +40,7 @@ function Future(){
                 </Text>
             </Heading>
             <Text>
-                I am currently working on a project called "The Daily Grind", which is a web application that allows users to create and share their own coffee recipes. I am also working on a project called "The Daily Grind", which is a web application that allows users to create and share their own coffee recipes. I am also working on a project called "The Daily Grind", which is a web application that allows users to create and share their own coffee recipes.
-            </Text>
-            <Heading
-            lineHeight={1.5}
-            fontWeight={600}
-            marginTop={{xl:"4", md:"3", base:"2"}}
-            marginBottom={{xl:"7", md:"4", base:"2"}}
-            fontSize={{ base: '2xl', sm: '3xl', lg: '4xl' }}>
-                <Text
-                as={'span'}
-                position={'relative'}>
-                Work
-                </Text>
-            </Heading>
-            <Text>
-                I enjoy playing video games, watching movies, and playing sports. I also enjoy reading books and listening to music.
+                My current interest lies within software development, machine learning, and applying those technologies to aid people in their daily lives.
             </Text>
         </Box>
     )

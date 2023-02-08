@@ -14,8 +14,7 @@ function Past(){
         py={{xl:"10", md:"7", base:"4"}}
         px={{xl:"10", md:"7", base:"4"}} 
         boxShadow="dark-lg" 
-        rounded={"2xl"}
-        className={colorMode==="light"?"experiences":"experiences-dark"}>
+        rounded={"2xl"}>
             <Heading
             lineHeight={1.5}
             fontWeight={600}
@@ -35,7 +34,7 @@ function Past(){
             border='1px' 
             borderColor='gray.200'
             minHeight={"50vh"} 
-            maxHeight={"80vh"} 
+            maxHeight={"100vh"}
             p="4">
                 <Stack direction="row">
                     <Menu closeOnSelect={false}>
@@ -106,7 +105,7 @@ function Past(){
                         </InputRightElement>
                     </InputGroup>
                 </Stack>
-                <Box w="100%" minHeight={"40vh"} maxHeight={"65vh"} rounded="2xl" mt="5" overflow="auto">
+                <Box w="100%" minHeight={"40vh"} maxHeight={"80vh"} rounded="2xl" mt="5" overflow="auto">
                     <CardResult/>
                 </Box>
             </Box>
