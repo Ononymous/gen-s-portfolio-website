@@ -3,23 +3,23 @@ import { Card, Code, CardBody, Heading, Text, Image, Link, Stack } from '@chakra
 
 function ExpCards({ title, description, image, links, tags }){
     const linkMap = links.map((link, index) =>
-        <>
+        <div key={index}>
         {'['}<Link 
-        id={index}
+        key={index}
         isExternal
         color='teal.300'
         href={link.url}>{link.text}</Link>{'] '}
-        </>
+        </div>
     )
 
     const tagMap = tags.map((tag, index) =>
         <Code
-        id={index}
+        key={index}
         ml="2">{tag}</Code>
     )
 
     const textMap = description.map((text, index) =>
-        <Text id={index} pt='1'>{text}</Text>
+        <Text key={index} pt='1'>{text}</Text>
     )
     
     return(

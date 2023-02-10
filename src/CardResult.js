@@ -1,7 +1,7 @@
 import React from 'react';
 import ExpCards from './ExpCards';
 
-function CardResult(){
+function CardResult({type, year, lang, frame, send}) {
     const exampleData = [
         {
             title: 'Prototype Website for SOAR Foundation',
@@ -87,14 +87,48 @@ function CardResult(){
             tags: ['Small Team', '2021-22', 'React.js', 'JavaScript', 'HTML/CSS']
         },
     ]
-    const cards = exampleData.map((card, index) => 
+    const filteredData = exampleData.filter((data) => {
+        if(type !== "all"){
+            if(data.tags[0] !== type){
+                return false;
+            }
+        }
+        if(year !== "all"){
+            if(data.tags[1] !== year){
+                return false;
+            }
+        }
+        if(frame.length !== 0){
+            for(let i = 0; i < frame.length; i++){
+                if(!data.tags.includes(frame[i])){
+                    return false;
+                }
+            }
+        }
+        if(lang.length !== 0){
+            for(let i = 0; i < lang.length; i++){
+                if(!data.tags.includes(lang[i])){
+                    return false;
+                }
+            }
+        }
+        if(send !== ""){
+            if(![data.title, data.description.join(' '), data.tags.join(' ')].join(' ').toLowerCase().includes(send)){
+                return false;
+            }
+        }
+        return true;
+    })
+
+    const cards = filteredData.map((card, index) => 
         <ExpCards 
-        id={index} 
+        key={index} 
         {...card}
         />
     )
 
     return(
+        // lang.length !== 0 ? <>{cards}</> : <h1>No entry found</h1>
         <>{cards}</>
     )
 }

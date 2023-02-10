@@ -4,7 +4,7 @@ import { Flex, Box } from "@chakra-ui/react";
 import "./App.css"
 import Now from "./Now.js";
 import Experiences from "./Experiences.js";
-import Future from "./Future.js";
+// import Future from "./Future.js";
 import Skills from "./Skills.js";
 
 
@@ -26,9 +26,9 @@ function About() {
             <Box className="spacer"></Box>
             <Box className="spacer"></Box>
             <Skills/>
+            {/* <Box className="spacer"></Box>
             <Box className="spacer"></Box>
-            <Box className="spacer"></Box>
-            <Future/>
+            <Future/> */}
         </Flex>
     );
 }

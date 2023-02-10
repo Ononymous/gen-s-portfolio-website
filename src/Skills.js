@@ -58,19 +58,19 @@ function Skills(){
             level: 'Experienced'
         },
         {
-            name: 'Firebase',
+            name: 'Firebase (Google Cloud Platform)',
             level: 'Experienced'
         },
         {
-            name: 'Anaconda',
+            name: 'Anaconda (Python)',
             level: 'Somewhat experienced'
         },
         {
-            name: 'Git',
+            name: 'Git (Version Control)',
             level: 'Experienced'
         },
         {
-            name: 'Fusion 360',
+            name: 'Fusion 360 (3D modeling)',
             level: 'Somewhat experienced'
         },
     ]

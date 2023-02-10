@@ -4,10 +4,24 @@ import "./App.css"
 import { SearchIcon } from '@chakra-ui/icons';
 import { useColorMode } from "@chakra-ui/react";
 import CardResult from './CardResult';
+import { useState } from 'react';
 
 
-function Past(){
+function Experiences(){
     const { colorMode } = useColorMode();
+    const [type, setType] = useState('all');
+    const [year, setYear] = useState('all');
+    const [lang, setLang] = useState([]);
+    const [frame, setFrame] = useState([]);
+    const [keyword, setKeyword] = useState('');
+    const [send, setSend] = useState('');
+
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            setSend(keyword.trim().toLowerCase());
+        }
+    };
+
     return(
         <Box 
         w={{xl:"55%", lg:"68%" , md:"82%", base:"95%"}} 
@@ -46,11 +60,11 @@ function Past(){
                             Type
                         </MenuButton>
                         <MenuList minWidth='240px'>
-                            <MenuOptionGroup defaultValue='all' type='radio'>
+                            <MenuOptionGroup onChange={setType} value={type} defaultValue='all' type='radio'>
                                 <MenuItemOption value='all'>All</MenuItemOption>
-                                <MenuItemOption value='small'>Small Team (4-5 people)</MenuItemOption>
-                                <MenuItemOption value='large'>Large Team (6-20 people)</MenuItemOption>
-                                <MenuItemOption value='intern'>Internship</MenuItemOption>
+                                <MenuItemOption value='Small Team'>Small Team (4-5 people)</MenuItemOption>
+                                <MenuItemOption value='Large Team'>Large Team (6-20 people)</MenuItemOption>
+                                <MenuItemOption value='Internship'>Internship</MenuItemOption>
                             </MenuOptionGroup>
                         </MenuList>
                     </Menu>
@@ -63,10 +77,10 @@ function Past(){
                             Year
                         </MenuButton>
                         <MenuList minWidth='240px'>
-                            <MenuOptionGroup defaultValue='all' type='radio'>
+                            <MenuOptionGroup onChange={setYear} value={year} defaultValue='all' type='radio'>
                                 <MenuItemOption value='all'>All</MenuItemOption>
-                                <MenuItemOption value='21'>2021-22</MenuItemOption>
-                                <MenuItemOption value='22'>2022-23</MenuItemOption>
+                                <MenuItemOption value='2021-22'>2021-22</MenuItemOption>
+                                <MenuItemOption value='2022-23'>2022-23</MenuItemOption>
                             </MenuOptionGroup>
                         </MenuList>
                     </Menu>
@@ -79,18 +93,18 @@ function Past(){
                             Tags
                         </MenuButton>
                         <MenuList minWidth='240px'>
-                            <MenuOptionGroup title='Framework' type='checkbox'>
+                            <MenuOptionGroup value={frame} onChange={(e) => setFrame(e)} title='Framework' type='checkbox'>
                                 {/* <MenuItemOption value='vue'>Vue.js</MenuItemOption>
                                 <MenuItemOption value='spring'>Spring Framework</MenuItemOption> */}
-                                <MenuItemOption value='react'>React.js</MenuItemOption>
+                                <MenuItemOption value='React.js'>React.js</MenuItemOption>
                                 {/* <MenuItemOption value='React Native'>React Native</MenuItemOption> */}
-                                <MenuItemOption value='wix'>Wix</MenuItemOption>
+                                <MenuItemOption value='Wix'>Wix</MenuItemOption>
                             </MenuOptionGroup>
                             <MenuDivider />
-                            <MenuOptionGroup title='Languages' type='checkbox'>
-                                <MenuItemOption value='javascript'>Javascript</MenuItemOption>
-                                <MenuItemOption value='html'>HTML/CSS</MenuItemOption>
-                                <MenuItemOption value='solidity'>Solidity (Web 3.0)</MenuItemOption>
+                            <MenuOptionGroup value={lang} onChange={(e) => setLang(e)} title='Languages' type='checkbox'>
+                                <MenuItemOption value='JavaScript'>Javascript</MenuItemOption>
+                                <MenuItemOption value='HTML/CSS'>HTML/CSS</MenuItemOption>
+                                <MenuItemOption value='Solidity'>Solidity (Web 3.0)</MenuItemOption>
                                 {/* <MenuItemOption value='Python'>Python</MenuItemOption> */}
                             </MenuOptionGroup>
                         </MenuList>
@@ -98,19 +112,22 @@ function Past(){
                     <InputGroup size='md' flex='1'>
                         <Input
                             pr='4.5rem'
-                            placeholder='Enter keyword'
+                            onChange={(e) => setKeyword(e.target.value)}
+                            placeholder='Search by keyword in title, description, and tags'
+                            onKeyDown={handleKeyDown}
+                            onSubmit={() => setSend(keyword.trim().toLowerCase())}
                         />
                         <InputRightElement width='4.5rem'>
-                            <IconButton aria-label='Search database' h='1.75rem' icon={<SearchIcon />} />
+                            <IconButton onClick={() => setSend(keyword.trim().toLowerCase())} aria-label='Search database' h='1.75rem' icon={<SearchIcon />} />
                         </InputRightElement>
                     </InputGroup>
                 </Stack>
                 <Box w="100%" minHeight={"40vh"} maxHeight={"80vh"} rounded="2xl" mt="5" overflow="auto">
-                    <CardResult/>
+                    <CardResult type={type} year={year} lang={lang} frame={frame} send={send}/>
                 </Box>
             </Box>
         </Box>
     )
 }
 
-export default Past;
+export default Experiences;

@@ -1,8 +1,8 @@
 import { AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Box, Link, UnorderedList, ListItem } from "@chakra-ui/react"
 
 function NowAccordion({name, link, linkText, listText}) {
-    const itemList = listText.map((text) =>
-    <ListItem>{text}</ListItem>
+    const itemList = listText.map((text, index) =>
+    <ListItem key={index}>{text}</ListItem>
     )
 
     return(
