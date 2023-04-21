@@ -31,7 +31,7 @@ function PhotoStack() {
             align={'center'}
             spacing={{ base: 8, md: 16 }}
             py={{ base: 12, md: 16 }}
-            w={{xl:"60%", md:"70%", base:"90%"}}
+            w={{xl:"50%", md:"70%", base:"90%"}}
             direction={{ base: 'column', md: 'row' }}>
                 <Flex
                 flex={1}

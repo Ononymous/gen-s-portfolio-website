@@ -99,13 +99,15 @@ function Experiences(){
                                 <MenuItemOption value='React.js'>React.js</MenuItemOption>
                                 {/* <MenuItemOption value='React Native'>React Native</MenuItemOption> */}
                                 <MenuItemOption value='Wix'>Wix</MenuItemOption>
+                                <MenuItemOption value='PyTorch'>PyTorch</MenuItemOption>
+                                <MenuItemOption value='Streamlit'>Streamlit</MenuItemOption>
                             </MenuOptionGroup>
                             <MenuDivider />
                             <MenuOptionGroup value={lang} onChange={(e) => setLang(e)} title='Languages' type='checkbox'>
                                 <MenuItemOption value='JavaScript'>Javascript</MenuItemOption>
                                 <MenuItemOption value='HTML/CSS'>HTML/CSS</MenuItemOption>
                                 <MenuItemOption value='Solidity'>Solidity (Web 3.0)</MenuItemOption>
-                                {/* <MenuItemOption value='Python'>Python</MenuItemOption> */}
+                                <MenuItemOption value='Python'>Python</MenuItemOption>
                             </MenuOptionGroup>
                         </MenuList>
                     </Menu>

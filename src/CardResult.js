@@ -4,6 +4,34 @@ import ExpCards from './ExpCards';
 function CardResult({type, year, lang, frame, send}) {
     const exampleData = [
         {
+            title: 'Noteblock.it',
+            description: [
+                'Invented a solution that allows an accurate conversion music file into noteblock systems in Minecraft',
+                'Implemented a recurrent neural network in PyTorch.',
+                'Hosted the demo app on Streamlit Community Cloud.',
+            ],
+            image: 'https://lh3.googleusercontent.com/drAPMHPmJ1yAEYmcp5hkg08g08cK1jLgthiN8nCmXxKmtzOrCHmVFVtfA9uOzuHTqRvZWAq6n_PpNSbmiir1uCk=s400',
+            links: [
+                {
+                    url: 'https://ononymous-noteblockit-openunmixcli-54v27e.streamlit.app/',
+                    text: 'demo'
+                },
+                {
+                    url: 'https://github.com/Ononymous/Noteblockit',
+                    text: 'Github'
+                },
+                {
+                    url: 'https://github.com/sigsep/open-unmix-pytorch',
+                    text: 'Open Unmix (reference)'
+                },
+                {
+                    url: 'https://datascienceucsb.org',
+                    text: 'UCSB Data Science Club'
+                },
+            ],
+            tags: ['Small Team', '2022-23', 'PyTorch', 'Python', 'Streamlit']
+        },
+        {
             title: 'Prototype Website for SOAR Foundation',
             description: [
                 'Software Developer Intern at SOAR Foundation',
@@ -13,12 +41,12 @@ function CardResult({type, year, lang, frame, send}) {
             image: 'https://i.ibb.co/mCZQ2pF/SOARGREENLogo.jpg',
             links: [
                 {
-                    url: 'https://soarfoundation.net/en/home/',
-                    text: 'SOAR Foundation'
+                    url: 'https://gen8009.wixsite.com/soar-foundation',
+                    text: 'prototype website'
                 },
                 {
-                    url: 'https://gen8009.wixsite.com/soar-foundation',
-                    text: 'Wix Prototype'
+                    url: 'https://soarfoundation.net/en/home/',
+                    text: 'SOAR foundation'
                 },
             ],
             tags: ['Internship', '2021-22', 'Wix']
@@ -37,7 +65,11 @@ function CardResult({type, year, lang, frame, send}) {
                 },
                 {
                     url: 'https://github.com/calee14/cryptaid',
-                    text: 'github'
+                    text: 'Github'
+                },
+                {
+                    url: 'https://coderssb.com/',
+                    text: 'Coders SB'
                 },
             ],
             tags: ['Small Team', '2021-22', 'React.js', 'Solidity', 'JavaScript', 'HTML/CSS']
@@ -57,11 +89,15 @@ function CardResult({type, year, lang, frame, send}) {
                 },
                 {
                     url: 'https://github.com/Ononymous/SBHacks_InterviewPrep',
-                    text: 'github'
+                    text: 'Github'
                 },
                 {
                     url: 'https://www.assemblyai.com/',
                     text: 'Assembly AI'
+                },
+                {
+                    url: 'https://sb-hacks-viii.devpost.com/',
+                    text: 'SB Hacks VIII'
                 },
             ],
             tags: ['Small Team', '2021-22', 'React.js', 'JavaScript', 'HTML/CSS']
@@ -81,7 +117,11 @@ function CardResult({type, year, lang, frame, send}) {
                 },
                 {
                     url: 'https://github.com/Ononymous/fiesta',
-                    text: 'github'
+                    text: 'Github'
+                },
+                {
+                    url: 'https://coderssb.com/',
+                    text: 'Coders SB'
                 },
             ],
             tags: ['Small Team', '2021-22', 'React.js', 'JavaScript', 'HTML/CSS']

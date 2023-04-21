@@ -8,17 +8,6 @@ function Now(){
     const { colorMode } = useColorMode();
     const accordionListData = [
         {
-            name: "Data Science Club 2022-2023 Project Pipeline:",
-            link: "https://datascienceucsb.org/",
-            linkText: "Link to Project Pipeline",
-            listText: [
-                "My team and I are making a web app that would read photo-scanned text out loud in human-like voice",
-                "Help people listen to text instead of having to read them",
-                "This would benefit people who reading disabilities and people who want to read paperback books in an audiobook fashion",
-                "Users would upload photo scans of texts in English; the app would convert the scans into text and read the transcript in human-like voice"
-            ]
-        },
-        {
             name: "GauchoCourses App Development:",
             link: "https://github.com/data-science-ucsb/gauchocourses",
             linkText: "Link to Github",
@@ -34,8 +23,8 @@ function Now(){
             link: "https://coderssb.com/",
             linkText: "Link to Club Website",
             listText: [
-                "A phone app using React Native",
-                "🚧🏗️ In progress... 🚧",
+                "A phone app called \"AirNet\" using React Native to allow users to track planes",
+                "Users can use their phone camera to scan the sky and the app will display the plane's information",
             ]
         }
     ]
@@ -63,7 +52,7 @@ function Now(){
                 </Text>
             </Heading>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
-            I am currently taking Data Structures and Algorithms I (CMPSC 130A), Computer Architecture (CMPSC 154), and Introduction to Computational Science (CMPSC 111) this quarter.
+            I am currently taking Data Structures and Algorithms II (CMPSC 130B) and Automata and Formal Languages (CMPSC 138) this quarter.
             </Text>
             <br/>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
