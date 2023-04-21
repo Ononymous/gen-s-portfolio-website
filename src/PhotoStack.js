@@ -5,12 +5,12 @@
 import {
     Box,
     Flex,
-    IconButton,
     Image,
     Heading,
     Text,
     Stack,
     Link,
+    Button,
 } from '@chakra-ui/react';
 
 import {FaLinkedinIn} from 'react-icons/fa'
@@ -72,32 +72,47 @@ function PhotoStack() {
                     Currently a student at the University of California Santa Barbara, studying Computer Science. I am passionate about technology and its impact on society.
                     </Text>
                     <Stack direction={'row'} spacing={3}>
-                        <Link href="https://www.linkedin.com/in/gen-tamada-59a7b8220/" isExternal>
-                        <IconButton 
+                        <Link href="https://www.linkedin.com/in/gen-tamada/" isExternal>
+                            <Button
                             colorScheme={'orange'}
-                            variant={colorMode==="light"? 'solid': 'outline'}
-                            icon={<FaLinkedinIn/>}/>
-                        </Link>
-                        
-                        <Link href="https://github.com/Ononymous" isExternal>
-                        <IconButton 
-                            colorScheme={'orange'}
-                            variant={colorMode==="light"? 'solid': 'outline'}
-                            icon={<FiGithub/>}/>
-                        </Link>
-                        
-                        <Link href="mailto:gtamada@cs.ucsb.edu" isExternal>
-                        <IconButton 
-                            variant={colorMode==="light"? 'solid': 'outline'}
-                            icon={<FiMail/>}
-                            colorScheme={'orange'}/>
+                            variant={colorMode === 'light' ? 'solid' : 'outline'}
+                            leftIcon={<FaLinkedinIn />}
+                            >
+                            LinkedIn
+                            </Button>
                         </Link>
 
-                        <IconButton 
-                            icon={<IoNewspaperOutline/>}
-                            variant={colorMode==="light"? 'solid': 'outline'}
+                        <Link href="https://github.com/Ononymous" isExternal>
+                            <Button
                             colorScheme={'orange'}
-                            onClick={(event) => { event.preventDefault(); window.open(Resume); }}/>
+                            variant={colorMode === 'light' ? 'solid' : 'outline'}
+                            leftIcon={<FiGithub />}
+                            >
+                            GitHub
+                            </Button>
+                        </Link>
+
+                        <Link href="mailto:gtamada@cs.ucsb.edu" isExternal>
+                            <Button
+                            variant={colorMode === 'light' ? 'solid' : 'outline'}
+                            leftIcon={<FiMail />}
+                            colorScheme={'orange'}
+                            >
+                            Email
+                            </Button>
+                        </Link>
+
+                        <Button
+                            leftIcon={<IoNewspaperOutline />}
+                            variant={colorMode === 'light' ? 'solid' : 'outline'}
+                            colorScheme={'orange'}
+                            onClick={(event) => {
+                            event.preventDefault();
+                            window.open(Resume);
+                            }}
+                        >
+                            Resume
+                        </Button>
                     </Stack>
                 </Stack>
             </Stack>
