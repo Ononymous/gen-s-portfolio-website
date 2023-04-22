@@ -11,6 +11,7 @@ import {
     Stack,
     Link,
     Button,
+    Wrap
 } from '@chakra-ui/react';
 
 import {FaLinkedinIn} from 'react-icons/fa'
@@ -26,7 +27,7 @@ import Resume from './images/Resume.pdf'
 function PhotoStack() {
     const { colorMode } = useColorMode();
     return (
-        <Flex align={'center'} justifyContent={"center"}>
+        <Flex align={'center'} justifyContent={"center"} w="100%">
             <Stack
             align={'center'}
             spacing={{ base: 8, md: 16 }}
@@ -39,25 +40,25 @@ function PhotoStack() {
                 align={'center'}
                 position={'relative'}
                 w={'full'}>
-                <Box
-                    position={'relative'}
-                    height={{xl:'350px', md:'280px', base:'250px'}}
-                    rounded={'10'}
-                    boxShadow={'dark-lg'}
-                    width={{xl:"full", md:"80%", base:"70%"}}
-                    overflow={'hidden'}>
-                    
-                    <Image
-                        alt={'selfie'}
-                        fit={'cover'}
-                        align={'center'}
-                        w={'100%'}
-                        h={'100%'}
-                        src={photo}
-                    />
-                </Box>
-            </Flex>
-                <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+                    <Box
+                        position={'relative'}
+                        height={{xl:'350px', md:'280px', base:'250px'}}
+                        rounded={'10'}
+                        boxShadow={'dark-lg'}
+                        width={{xl:"full", md:"80%", base:"70%"}}
+                        overflow={'hidden'}>
+                        
+                        <Image
+                            alt={'selfie'}
+                            fit={'cover'}
+                            align={'center'}
+                            w={'100%'}
+                            h={'100%'}
+                            src={photo}
+                        />
+                    </Box>
+                </Flex>
+                <Stack flex={1} spacing={{ base: 5, md: 10 }} w="100%">
                     <Heading
                     lineHeight={1.1}
                     fontWeight={700}
@@ -71,49 +72,49 @@ function PhotoStack() {
                     <Text color={'gray.500'} fontSize={{ md: 'lg', lg: 'xl' }}>
                     Currently a student at the University of California Santa Barbara, studying Computer Science. I am passionate about technology and its impact on society.
                     </Text>
-                    <Stack direction={'row'} spacing={3}>
-                        <Link href="https://www.linkedin.com/in/gen-tamada/" isExternal>
-                            <Button
-                            colorScheme={'orange'}
-                            variant={colorMode === 'light' ? 'solid' : 'outline'}
-                            leftIcon={<FaLinkedinIn />}
-                            >
-                            LinkedIn
-                            </Button>
-                        </Link>
+                    <Wrap spacing={3} align="center" justify="center">
+                            <Link href="https://www.linkedin.com/in/gen-tamada/" isExternal>
+                                <Button
+                                    colorScheme={"orange"}
+                                    variant={colorMode === "light" ? "solid" : "outline"}
+                                    leftIcon={<FaLinkedinIn />}
+                                >
+                                    LinkedIn
+                                </Button>
+                            </Link>
 
-                        <Link href="https://github.com/Ononymous" isExternal>
-                            <Button
-                            colorScheme={'orange'}
-                            variant={colorMode === 'light' ? 'solid' : 'outline'}
-                            leftIcon={<FiGithub />}
-                            >
-                            GitHub
-                            </Button>
-                        </Link>
+                            <Link href="https://github.com/Ononymous" isExternal>
+                                <Button
+                                    colorScheme={"orange"}
+                                    variant={colorMode === "light" ? "solid" : "outline"}
+                                    leftIcon={<FiGithub />}
+                                >
+                                    GitHub
+                                </Button>
+                            </Link>
 
-                        <Link href="mailto:gtamada@cs.ucsb.edu" isExternal>
-                            <Button
-                            variant={colorMode === 'light' ? 'solid' : 'outline'}
-                            leftIcon={<FiMail />}
-                            colorScheme={'orange'}
-                            >
-                            Email
-                            </Button>
-                        </Link>
+                            <Link href="mailto:gtamada@cs.ucsb.edu" isExternal>
+                                <Button
+                                    variant={colorMode === "light" ? "solid" : "outline"}
+                                    leftIcon={<FiMail />}
+                                    colorScheme={"orange"}
+                                >
+                                    Email
+                                </Button>
+                            </Link>
 
-                        <Button
+                            <Button
                             leftIcon={<IoNewspaperOutline />}
-                            variant={colorMode === 'light' ? 'solid' : 'outline'}
-                            colorScheme={'orange'}
+                            variant={colorMode === "light" ? "solid" : "outline"}
+                            colorScheme={"orange"}
                             onClick={(event) => {
-                            event.preventDefault();
-                            window.open(Resume);
+                                event.preventDefault();
+                                window.open(Resume);
                             }}
-                        >
+                            >
                             Resume
-                        </Button>
-                    </Stack>
+                            </Button>
+                    </Wrap>
                 </Stack>
             </Stack>
         </Flex>
