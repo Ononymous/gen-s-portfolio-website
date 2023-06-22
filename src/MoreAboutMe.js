@@ -1,5 +1,5 @@
 import React from 'react';
-import { VStack, IconButton, Text, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, useDisclosure, Box, Heading, SimpleGrid, useColorMode } from '@chakra-ui/react';
+import { VStack, Button, Icon, Text, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, useDisclosure, Box, Heading, SimpleGrid, useColorMode } from '@chakra-ui/react';
 import { MdSchool, MdGroup, MdCode, MdComputer, MdLanguage, MdSettings } from 'react-icons/md';
 import { classMap, clubMap, pyMap, nodeMap, langMap, techMap } from './moreData';
 
@@ -8,34 +8,53 @@ function MoreAboutMe() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [modalContent, setModalContent] = React.useState('');
 
-  const handleClick = (content) => {
-    setModalContent(content);
+  const handleClick = (content, description) => {
+    setModalContent({content: content, description: description});
     onOpen();
   };
 
   const renderGridItem = (icon, label, description, content) => (
-    <VStack key={label}>
-      <IconButton
-        colorScheme={'orange'}
-        variant={colorMode==="light"? 'solid': 'outline'}
-        aria-label={label}
-        fontSize="4xl"
-        icon={icon}
-        onClick={() => handleClick(content)}
-      />
-      <Text fontSize="lg" fontWeight="bold" mt={2}>{label}</Text>
-      <Text fontSize="sm" textAlign="center">{description}</Text>
-    </VStack>
+    <Button
+      key={label}
+      height="auto"
+      background="transparent"
+      _hover={{
+        background: "rgba(0, 0, 0, 0.1)",
+        textDecoration: "none",
+      }}
+      p="10"
+      onClick={() => handleClick(content, description)}
+    >
+      <VStack spacing={2} w="10px">
+        <Icon
+          color={colorMode === 'light' ? 'white' : 'orange'}
+          backgroundColor={colorMode === 'light' ? 'orange' : 'none'}
+          aria-label={label}
+          as={icon}
+          boxSize={20}
+          borderRadius="10px"
+          borderWidth="2px"
+          borderColor="orange"
+        />
+        <Text
+          fontSize="lg"
+          fontWeight="bold"
+          pt={2}
+        >
+          {label}
+        </Text>
+      </VStack>
+    </Button>
   );
   
   const gridItems = [
-    { icon: <MdSchool />, label: 'Classes', content: classMap, description: 'A list of computer science classes taken or currently being taken, along with their completion status.' },
-    { icon: <MdGroup />, label: 'Clubs', content: clubMap, description: 'A list of clubs joined, including the number of projects completed in each club.' },
-    { icon: <MdCode />, label: 'Python related', content: pyMap, description: 'An array of Python libraries and frameworks, along with experience levels in each.' },
-    { icon: <MdComputer />, label: 'Node.js related', content: nodeMap, description: 'A collection of Node.js-related technologies and libraries, with experience levels for each.' },
-    { icon: <MdLanguage />, label: 'Languages', content: langMap, description: 'A compilation of programming languages known, with experience levels for each.' },
-    { icon: <MdSettings />, label: 'Technologies', content: techMap, description: 'A list of various technologies and tools used, with experience levels in each.' },
-  ];
+    { icon: MdSchool, label: 'Classes', content: classMap, description: 'Computer science classes with completion status.' },
+    { icon: MdGroup, label: 'Clubs', content: clubMap, description: 'Joined clubs with project completion counts.' },
+    { icon: MdCode, label: 'Python related', content: pyMap, description: 'Python libraries/frameworks and experience levels.' },
+    { icon: MdComputer, label: 'Node.js related', content: nodeMap, description: 'Node.js technologies and experience levels.' },
+    { icon: MdLanguage, label: 'Languages', content: langMap, description: 'Known programming languages and proficiency.' },
+    { icon: MdSettings, label: 'Technologies', content: techMap, description: 'Technologies/tools used and experience levels.' },
+  ];  
 
   return (
     <Box
@@ -63,11 +82,11 @@ function MoreAboutMe() {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent py={{ xl: '10', md: '7', base: '4' }} px={{ xl: '10', md: '7', base: '4' }}>
-          <ModalHeader>Details</ModalHeader>
+          <ModalHeader>{modalContent.description}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <VStack spacing={4} alignItems="stretch">
-              {modalContent}
+              {modalContent.content}
             </VStack>
           </ModalBody>
         </ModalContent>

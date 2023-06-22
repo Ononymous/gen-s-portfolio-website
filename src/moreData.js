@@ -15,11 +15,11 @@ const classData = [
     },
     {
         name: 'Data Structures and Algorithms II (CMPSC 130B)',
-        level: 'In progress'
+        level: 'A'
     },
     {
         name: 'Automata and Formal Languages (CMPSC 138)',
-        level: 'In progress'
+        level: 'A+'
     },
 ]
 export const classMap = classData.map((data, index) =>
@@ -37,11 +37,11 @@ const nodeData = [
     },
     {
         name: 'React Native',
-        level: 'Somewhat experienced'
+        level: 'Experienced'
     },
     {
         name: 'Expo',
-        level: 'Experienced'
+        level: 'Proficient'
     },
     {
         name: 'Chakra UI',
@@ -53,7 +53,7 @@ const nodeData = [
     },
     {
         name: 'Axios',
-        level: 'Somewhat experienced'
+        level: 'Experienced'
     },
     {
         name: 'Moralis',
@@ -61,7 +61,7 @@ const nodeData = [
     },
     {
         name: 'React Navigation',
-        level: 'Somewhat experienced'
+        level: 'Experienced'
     },
     {
         name: 'Firebase (Google Cloud Platform)',
@@ -110,7 +110,7 @@ const pyData = [
         level: 'Familiar'
     },
     {
-        name: 'librosa',
+        name: 'Librosa',
         level: 'Experienced'
     },
 ]
@@ -131,6 +131,10 @@ const clubData = [
         name: 'Data Science Club',
         level: 'Member (1 project)'
     },
+    {
+        name: 'SB Hacks',
+        level: 'Participant (1 project)'
+    }
 ]
 export const clubMap = clubData.map((data, index) =>
     <Flex key={index} justify="space-between" wrap="nowrap">
@@ -191,6 +195,10 @@ const techData = [
         name: 'Fusion 360 (3D modeling)',
         level: 'Somewhat experienced'
     },
+    {
+        name: 'Cocos Creator (Game Engine)',
+        level: 'Experienced'
+    }
 ]
 export const techMap = techData.map((data, index) =>
     <Flex key={index} justify="space-between" wrap="nowrap">

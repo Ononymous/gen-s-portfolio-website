@@ -73,47 +73,47 @@ function PhotoStack() {
                     Currently a student at the University of California Santa Barbara, studying Computer Science. I am passionate about technology and its impact on society.
                     </Text>
                     <Wrap spacing={3} align="center" justify="center">
-                            <Link href="https://www.linkedin.com/in/gen-tamada/" isExternal>
-                                <Button
-                                    colorScheme={"orange"}
-                                    variant={colorMode === "light" ? "solid" : "outline"}
-                                    leftIcon={<FaLinkedinIn />}
-                                >
-                                    LinkedIn
-                                </Button>
-                            </Link>
-
-                            <Link href="https://github.com/Ononymous" isExternal>
-                                <Button
-                                    colorScheme={"orange"}
-                                    variant={colorMode === "light" ? "solid" : "outline"}
-                                    leftIcon={<FiGithub />}
-                                >
-                                    GitHub
-                                </Button>
-                            </Link>
-
-                            <Link href="mailto:gtamada@cs.ucsb.edu" isExternal>
-                                <Button
-                                    variant={colorMode === "light" ? "solid" : "outline"}
-                                    leftIcon={<FiMail />}
-                                    colorScheme={"orange"}
-                                >
-                                    Email
-                                </Button>
-                            </Link>
-
+                        <Link href="https://www.linkedin.com/in/gen-tamada/" isExternal>
                             <Button
-                            leftIcon={<IoNewspaperOutline />}
-                            variant={colorMode === "light" ? "solid" : "outline"}
-                            colorScheme={"orange"}
-                            onClick={(event) => {
-                                event.preventDefault();
-                                window.open(Resume);
-                            }}
+                                colorScheme={"orange"}
+                                variant={colorMode === "light" ? "solid" : "outline"}
+                                leftIcon={<FaLinkedinIn />}
                             >
-                            Resume
+                                LinkedIn
                             </Button>
+                        </Link>
+
+                        <Link href="https://github.com/Ononymous" isExternal>
+                            <Button
+                                colorScheme={"orange"}
+                                variant={colorMode === "light" ? "solid" : "outline"}
+                                leftIcon={<FiGithub />}
+                            >
+                                GitHub
+                            </Button>
+                        </Link>
+
+                        <Link href="mailto:gtamada@cs.ucsb.edu" isExternal>
+                            <Button
+                                variant={colorMode === "light" ? "solid" : "outline"}
+                                leftIcon={<FiMail />}
+                                colorScheme={"orange"}
+                            >
+                                Email
+                            </Button>
+                        </Link>
+
+                        <Button
+                        leftIcon={<IoNewspaperOutline />}
+                        variant={colorMode === "light" ? "solid" : "outline"}
+                        colorScheme={"orange"}
+                        onClick={(event) => {
+                            event.preventDefault();
+                            window.open(Resume);
+                        }}
+                        >
+                        Resume
+                        </Button>
                     </Wrap>
                 </Stack>
             </Stack>
