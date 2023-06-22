@@ -19,7 +19,7 @@ function MoreAboutMe() {
       height="auto"
       background="transparent"
       _hover={{
-        background: "rgba(0, 0, 0, 0.1)",
+        background: colorMode === 'light' ? "rgba(0, 0, 0, 0.1)" : "rgba(255, 255, 255, 0.1)",
         textDecoration: "none",
       }}
       p="10"
