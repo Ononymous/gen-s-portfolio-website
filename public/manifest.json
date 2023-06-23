@@ -39,7 +39,7 @@
             "density": "4.0"
         }
     ],
-    "start_url": "/",
+    "start_url": "https://gobyu.live/",
     "scope": "https://gobyu.live/",
     "display": "standalone",
     "background_color": "#000000",
