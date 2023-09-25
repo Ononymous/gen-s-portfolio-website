@@ -18,7 +18,7 @@ import {
           spacing={4}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
-          <Text>© 2022 Created by Gen Tamada with React.js and Chakra UI. All rights reserved. Last edit:6/22/2023</Text>
+          <Text>© 2022 Created by Gen Tamada with React.js and Chakra UI. All rights reserved. Last edit: 9/25/2023</Text>
         </Container>
       </Box>
     );

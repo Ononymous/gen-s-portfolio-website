@@ -8,25 +8,26 @@ function Now(){
     const { colorMode } = useColorMode();
     const accordionListData = [
         {
-            name: "GauchoCourses App Development:",
-            link: "https://github.com/data-science-ucsb/gauchocourses",
+            name: "SBHacks Organizing Team:",
+            link: "https://github.com/sbhacks-org",
             linkText: "Link to Github",
             listText: [
-                "A UCSB Data Science Club project, and I am joining its backend team",
-                "A quarterly course planner that allows students to see possible schedule combinations for the classes they want to take",
-                "Using Spring Framework for the backend and Vue.js for frontend",
-                "This would benefit students by allowing them to efficiently explore more available options for their class schedule"
+                "A UCSB's student organized hackathon, sponsored by Major League Hacking(MLH)",
+                "Currently working in the development team, on the website, automating the registration process and the judging process, and organizing the newsletters",
+                "Planning to host the event from Jan 12-14, 2023, in-person at UCSB",
             ]
         },
-        {
-            name: "Coders SB Club 2022-2023 Winter quarter Project Series:",
-            link: "https://coderssb.com/",
-            linkText: "Link to Club Website",
-            listText: [
-                "A phone app called \"AirNet\" using React Native to allow users to track planes",
-                "Users can use their phone camera to scan the sky and the app will display the plane's information",
-            ]
-        }
+        // {
+        //     name: "GauchoCourses App Development:",
+        //     link: "https://github.com/data-science-ucsb/gauchocourses",
+        //     linkText: "Link to Github",
+        //     listText: [
+        //         "A UCSB Data Science Club project, and I am joining its backend team",
+        //         "A quarterly course planner that allows students to see possible schedule combinations for the classes they want to take",
+        //         "Using Spring Framework for the backend and Vue.js for frontend",
+        //         "This would benefit students by allowing them to efficiently explore more available options for their class schedule"
+        //     ]
+        // },
     ]
     const AccordionList = accordionListData.map((data, index) =>
         <NowAccordion key={index} name={data.name} link={data.link} linkText={data.linkText} listText={data.listText}/>
@@ -52,11 +53,11 @@ function Now(){
                 </Text>
             </Heading>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
-            I am currently taking Data Structures and Algorithms II (CMPSC 130B) and Automata and Formal Languages (CMPSC 138) this quarter.
+            I am currently taking Special Topics: Software Systems (CMPSC 190B) this quarter.
             </Text>
             <br/>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
-            As for extracurriculars, I am a returning member of the Coders SB Club, which focus mainly on React and web dev, and I have also joined Data Science Club this year.
+            As for extracurriculars, I am a returning member of the Data Science Club, and I also am planning on focusing on the organizors' team this year.
             </Text>
             <Heading
             lineHeight={1.5}
@@ -73,22 +74,6 @@ function Now(){
             <Accordion allowToggle>
                 {AccordionList}
             </Accordion>
-
-            {/* <Heading
-            lineHeight={1.5}
-            fontWeight={600}
-            marginTop={{xl:"4", md:"3", base:"2"}}
-            marginBottom={{xl:"7", md:"4", base:"2"}}
-            fontSize={{ base: '2xl', sm: '3xl', lg: '4xl' }}>
-                <Text
-                as={'span'}
-                position={'relative'}>
-                Hobbies
-                </Text>
-            </Heading>
-            <Text fontSize={{ base: 'md', lg: 'lg' }}>
-            In my spare time, I like working out in the gym, playing badminton, and reading novels written in the three languages I am proficient in.
-            </Text> */}
         </Box>
     )
 }

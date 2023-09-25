@@ -81,6 +81,7 @@ function Experiences(){
                                 <MenuItemOption value='all'>All</MenuItemOption>
                                 <MenuItemOption value='2021-22'>2021-22</MenuItemOption>
                                 <MenuItemOption value='2022-23'>2022-23</MenuItemOption>
+                                <MenuItemOption value='2023-24'>2023-24</MenuItemOption>
                             </MenuOptionGroup>
                         </MenuList>
                     </Menu>
@@ -101,6 +102,7 @@ function Experiences(){
                                 <MenuItemOption value='Wix'>Wix</MenuItemOption>
                                 <MenuItemOption value='PyTorch'>PyTorch</MenuItemOption>
                                 <MenuItemOption value='Streamlit'>Streamlit</MenuItemOption>
+                                <MenuItemOption value='Cocos Creator'>Cocos Creator</MenuItemOption>
                             </MenuOptionGroup>
                             <MenuDivider />
                             <MenuOptionGroup value={lang} onChange={(e) => setLang(e)} title='Languages' type='checkbox'>

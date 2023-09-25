@@ -133,7 +133,7 @@ const clubData = [
     },
     {
         name: 'SB Hacks',
-        level: 'Participant (1 project)'
+        level: 'Former participant and current organizor (2 project)'
     }
 ]
 export const clubMap = clubData.map((data, index) =>
