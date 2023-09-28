@@ -4,6 +4,7 @@ import Navbar from "./Navbar"
 import PhotoStack from "./PhotoStack"
 import About from "./About"
 import Footer from "./Footer";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <PhotoStack/>
       <About/>
       <Footer/>
+      <Analytics />
     </div>
   );
 }
