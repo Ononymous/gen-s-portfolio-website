@@ -8,13 +8,12 @@ function Now(){
     const { colorMode } = useColorMode();
     const accordionListData = [
         {
-            name: "SBHacks Organizing Team:",
-            link: "https://github.com/sbhacks-org",
-            linkText: "Link to Github",
+            name: "Data Science Club Project Group:",
+            link: "https://datascienceucsb.org/",
+            linkText: "Link to Website",
             listText: [
-                "A UCSB's student organized hackathon, sponsored by Major League Hacking(MLH)",
-                "Currently working in the development team, on the website, automating the registration process and the judging process, and organizing the newsletters",
-                "Planning to host the event from Jan 12-14, 2023, in-person at UCSB",
+                "UCSB's largest data science and computer science club",
+                "Currently working towards a project that would benefit the UCSB community",
             ]
         },
         // {
@@ -53,7 +52,7 @@ function Now(){
                 </Text>
             </Heading>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
-            I am currently taking Special Topics: Software Systems (CMPSC 190B) this quarter.
+            I am currently taking Operating Systems (CMPSC 170), Computer Communication Networks (CMPSC 176A), Special Topics: Data Structure and Algorithms (CMPSC 190A) this quarter.
             </Text>
             <br/>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>

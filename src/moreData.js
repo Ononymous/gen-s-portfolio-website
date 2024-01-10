@@ -21,6 +21,22 @@ const classData = [
         name: 'Automata and Formal Languages (CMPSC 138)',
         level: 'A+'
     },
+    {
+        name: "Special Topics: Internet of Things (CMPSC 190B)",
+        level: 'A'
+    },
+    {
+        name: "Computer Communication Networks (CMPSC 176A)",
+        level: 'In progress'
+    },
+    {
+        name: "Operating Systems (CMPSC 170)",
+        level: 'In progress'
+    },
+    {
+        name: "Special Topics: Data Structure and Algorithms (CMPSC 190A)",
+        level: 'In progress'
+    },
 ]
 export const classMap = classData.map((data, index) =>
     <Flex key={index} justify="space-between" wrap="nowrap">
@@ -40,7 +56,7 @@ const nodeData = [
         level: 'Experienced'
     },
     {
-        name: 'Expo',
+        name: 'Expo Mobile Development',
         level: 'Proficient'
     },
     {
@@ -129,11 +145,11 @@ const clubData = [
     },
     {
         name: 'Data Science Club',
-        level: 'Member (1 project)'
+        level: 'Member/Organizor (2 project)'
     },
     {
         name: 'SB Hacks',
-        level: 'Former participant and current organizor (2 project)'
+        level: 'Participant (2 project)'
     }
 ]
 export const clubMap = clubData.map((data, index) =>
@@ -170,7 +186,7 @@ const langData = [
         level: 'Familiar'
     },
     {
-        name: 'Unix',
+        name: 'Linux',
         level: 'Somewhat experienced'
     },
 ]
