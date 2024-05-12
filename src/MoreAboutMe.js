@@ -79,7 +79,8 @@ function MoreAboutMe() {
       <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
         {gridItems.map((item) => renderGridItem(item.icon, item.label, item.description, item.content))}
       </SimpleGrid>
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} isCentered size='xl'
+        motionPreset='slideInBottom'>
         <ModalOverlay />
         <ModalContent py={{ xl: '10', md: '7', base: '4' }} px={{ xl: '10', md: '7', base: '4' }}>
           <ModalHeader>{modalContent.description}</ModalHeader>

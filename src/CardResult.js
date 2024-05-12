@@ -3,8 +3,98 @@ import ExpCards from './ExpCards';
 
 function CardResult({type, year, lang, frame, send}) {
     const exampleData = [
-        // {AirNet}
-        // {GauchoCourses}
+        {
+            title: 'Refract: Cloaking Photos for Privacy',
+            description: [
+                'Developed a model that cloaks photos of individuals to protect against unauthorized training for deepfakes, facial recognition, and other harmful forms of identity theft.',
+                'Introduced subtle details in the original image to make it appear like the target photo.',
+                'Successfully disrupted the feature-identifying capabilities of image-processing models.',
+            ],
+            image: 'https://i.ibb.co/NTxSY0F/Refract-Poster.png',
+            links: [
+                {
+                    url: 'https://refract-two.vercel.app/',
+                    text: 'demo'
+                },
+                {
+                    url: 'https://github.com/heyyysus/refract',
+                    text: 'Github'
+                },
+                {
+                    url: 'https://datascienceucsb.org',
+                    text: 'UCSB Data Science Club'
+                }
+            ],
+            tags: ['Small Team', '2023-24', 'Python', 'PyTorch', 'React.js', 'JavaScript', 'AWS']
+        },
+        {
+            title: 'KOS: Kernel Operating System',
+            description: [
+                'Developed an operating system in C that can run on a MIPS R3000 32-bit processor simulator.',
+                'Supports basic Linux commands like fork, exec, pipe, dup, etc.',
+                'For CS170 Operating System class at UCSB.',
+            ],
+            image: 'https://i.ibb.co/GphpNWS/image.png',
+            links: [
+                {
+                    url: 'https://sites.cs.ucsb.edu/~rich/class/cs170/labs/kos_start/index.html',
+                    text: 'lab website'
+                },
+                {
+                    url: 'https://sites.cs.ucsb.edu/~rich/class/cs170/labs/kos_pipe/simulator_lab2.h',
+                    text: 'simulator header file'
+                },
+            ],
+            tags: ['Small Team', '2023-24', 'C', 'Linux']
+        },
+        {
+            title: 'AirNet: AR Plane Tracker',
+            description: [
+                'Developed a plane tracker that lists nearby planes, shows detailed information, and visualizes the plane on the map using AR.',
+                'Used React Native, Expo, and Flightradar24 API.',
+            ],
+            image: 'https://i.ibb.co/zPD5dTs/Screenshot-2024-05-11-at-10-54-40-PM.png',
+            links: [
+                {
+                    url: 'https://github.com/Ononymous/AirNet',
+                    text: 'Github'
+                },
+                {
+                    url: 'https://coderssb.com/',
+                    text: 'Coders SB'
+                },
+                {
+                    url: 'https://www.flightradar24.com/',
+                    text: 'Flightradar24'
+                }
+            ],
+            tags: ['Small Team', '2023-24', 'React Native', 'JavaScript', 'Linear Algebra']
+        },
+        {
+            title: 'GauchoCourses: a Better Schedule Planner',
+            description: [
+                'A quarterly course planner that allows students to see possible schedule combinations for the classes they want to take, and save them for when their pass times come around.',
+                'Created with Vue.js on Frontend, Spring Boot on backend',
+                'Leagacy code from UCSB Data Science Club alumni',
+                'Sponsored by UCSB',
+            ],
+            image: 'https://i.ibb.co/xHSVwMS/image.png',
+            links: [
+                {
+                    url: 'https://gauchocourses.datascienceucsb.org/#/',
+                    text: 'website'
+                },
+                {
+                    url: 'https://github.com/data-science-ucsb/gauchocourses',
+                    text: 'Github'
+                },
+                {
+                    url: 'https://datascienceucsb.org',
+                    text: 'UCSB Data Science Club'
+                }
+            ],
+            tags: ['Large Team', '2022-23', 'Vue.js', 'Spring Boot', 'JavaScript']
+        },
         {
             title: 'Aquimo LightShow',
             description: [
@@ -26,7 +116,7 @@ function CardResult({type, year, lang, frame, send}) {
             tags: ['Internship', '2022-23', 'JavaScript', 'Cocos Creator', 'HTML/CSS']
         },
         {
-            title: 'Noteblock.it',
+            title: 'Noteblock.it: Music to Minecraft',
             description: [
                 'Invented a solution that allows an accurate conversion music file into noteblock systems in Minecraft',
                 'Implemented a recurrent neural network in PyTorch.',
@@ -76,7 +166,7 @@ function CardResult({type, year, lang, frame, send}) {
             tags: ['Internship', '2021-22', 'Wix']
         },
         {
-            title: 'Cryptaid',
+            title: 'Cryptaid: Decentralized donation platform',
             description: [
                 'Spring quarter Coders SB project series (collab with UCSB Blockchain club)',
                 'Used Moralis.io blockchain to allow users to anonymously gather or send donations to the causes they are supporting.',

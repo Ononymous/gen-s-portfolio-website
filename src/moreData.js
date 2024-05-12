@@ -27,14 +27,26 @@ const classData = [
     },
     {
         name: "Computer Communication Networks (CMPSC 176A)",
-        level: 'In progress'
+        level: 'A'
     },
     {
         name: "Operating Systems (CMPSC 170)",
-        level: 'In progress'
+        level: 'A'
     },
     {
         name: "Special Topics: Data Structure and Algorithms (CMPSC 190A)",
+        level: 'A'
+    },
+    {
+        name: "Compilers (CMPSC 160)",
+        level: 'In progress'
+    },
+    {
+        name: "Computer Security (CMPSC 177)",
+        level: 'In progress'
+    },
+    {
+        name: "Advanced Application Development (CMPSC 156)",
         level: 'In progress'
     },
 ]
@@ -68,6 +80,14 @@ const nodeData = [
         level: 'Experienced'
     },
     {
+        name: 'Chakra UI',
+        level: 'Experienced'
+    },
+    {
+        name: 'Tailwind CSS',
+        level: 'Experienced'
+    },
+    {
         name: 'Axios',
         level: 'Experienced'
     },
@@ -94,16 +114,12 @@ export const nodeMap = nodeData.map((data, index) =>
 
 const pyData = [
     {
-        name: 'Anaconda',
-        level: 'Somewhat experienced'
-    },
-    {
-        name: 'Streamlit',
-        level: 'Experienced'
-    },
-    {
         name: 'PyTorch',
         level: 'Somewhat experienced'
+    },
+    {
+        name: 'TorchVision',
+        level: 'Familiar'
     },
     {
         name: 'TensorFlow',
@@ -126,7 +142,15 @@ const pyData = [
         level: 'Familiar'
     },
     {
+        name: 'Anaconda',
+        level: 'Somewhat experienced'
+    },
+    {
         name: 'Librosa',
+        level: 'Experienced'
+    },
+    {
+        name: 'Streamlit',
         level: 'Experienced'
     },
 ]
@@ -162,15 +186,19 @@ export const clubMap = clubData.map((data, index) =>
 
 const langData = [
     {
-        name: 'Java',
-        level: 'Somewhat experienced'
-    },
-    {
         name: 'Python',
         level: 'Proficient'
     },
     {
         name: 'C++',
+        level: 'Proficient'
+    },
+    {
+        name: 'C',
+        level: 'Proficient'
+    },
+    {
+        name: 'Linux',
         level: 'Proficient'
     },
     {
@@ -182,12 +210,12 @@ const langData = [
         level: 'Experienced'
     },
     {
-        name: 'Solidity',
-        level: 'Familiar'
+        name: 'Java',
+        level: 'Somewhat experienced'
     },
     {
-        name: 'Linux',
-        level: 'Somewhat experienced'
+        name: 'Solidity',
+        level: 'Familiar'
     },
 ]
 export const langMap = langData.map((data, index) =>

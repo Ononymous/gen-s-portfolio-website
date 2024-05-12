@@ -94,22 +94,21 @@ function Experiences(){
                             Tags
                         </MenuButton>
                         <MenuList minWidth='240px'>
-                            <MenuOptionGroup value={frame} onChange={(e) => setFrame(e)} title='Framework' type='checkbox'>
-                                {/* <MenuItemOption value='vue'>Vue.js</MenuItemOption>
-                                <MenuItemOption value='spring'>Spring Framework</MenuItemOption> */}
+                            <MenuOptionGroup value={frame} onChange={(e) => setFrame(e)} title='Tech' type='checkbox'>
+                                <MenuItemOption value='vue'>Vue.js</MenuItemOption>
+                                <MenuItemOption value='Spring Boot'>Spring Boot</MenuItemOption>
                                 <MenuItemOption value='React.js'>React.js</MenuItemOption>
-                                {/* <MenuItemOption value='React Native'>React Native</MenuItemOption> */}
-                                <MenuItemOption value='Wix'>Wix</MenuItemOption>
+                                <MenuItemOption value='React Native'>React Native</MenuItemOption>
                                 <MenuItemOption value='PyTorch'>PyTorch</MenuItemOption>
-                                <MenuItemOption value='Streamlit'>Streamlit</MenuItemOption>
                                 <MenuItemOption value='Cocos Creator'>Cocos Creator</MenuItemOption>
+                                <MenuItemOption value='AWS'>AWS</MenuItemOption>
                             </MenuOptionGroup>
                             <MenuDivider />
                             <MenuOptionGroup value={lang} onChange={(e) => setLang(e)} title='Languages' type='checkbox'>
                                 <MenuItemOption value='JavaScript'>Javascript</MenuItemOption>
-                                <MenuItemOption value='HTML/CSS'>HTML/CSS</MenuItemOption>
                                 <MenuItemOption value='Solidity'>Solidity (Web 3.0)</MenuItemOption>
                                 <MenuItemOption value='Python'>Python</MenuItemOption>
+                                <MenuItemOption value='C'>C</MenuItemOption>
                             </MenuOptionGroup>
                         </MenuList>
                     </Menu>

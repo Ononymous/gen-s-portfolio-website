@@ -7,15 +7,15 @@ import NowAccordion from './NowAccordion';
 function Now(){
     const { colorMode } = useColorMode();
     const accordionListData = [
-        {
-            name: "Data Science Club Project Group:",
-            link: "https://datascienceucsb.org/",
-            linkText: "Link to Website",
-            listText: [
-                "UCSB's largest data science and computer science club",
-                "Currently working towards a project that would benefit the UCSB community",
-            ]
-        },
+        // {
+        //     name: "Data Science Club Project Group:",
+        //     link: "https://datascienceucsb.org/",
+        //     linkText: "Link to Website",
+        //     listText: [
+        //         "UCSB's largest data science and computer science club",
+        //         "Currently working towards a project that would benefit the UCSB community",
+        //     ]
+        // },
         // {
         //     name: "GauchoCourses App Development:",
         //     link: "https://github.com/data-science-ucsb/gauchocourses",
@@ -52,13 +52,13 @@ function Now(){
                 </Text>
             </Heading>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
-            I am currently taking Operating Systems (CMPSC 170), Computer Communication Networks (CMPSC 176A), Special Topics: Data Structure and Algorithms (CMPSC 190A) this quarter.
+            I am currently taking Compilers (CMPSC 160), Computer Security (CMPSC 177), and Advanced Application Development (CMPSC 156) this quarter.
             </Text>
             <br/>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
-            As for extracurriculars, I am a returning member of the Data Science Club, and I also am planning on focusing on the organizors' team this year.
+            As for extracurriculars, I have just finished my annual Data Science Club presentation, got a 2nd place, and currently focusing on MS application.
             </Text>
-            <Heading
+            {accordionListData.length !== 0 && <Heading
             lineHeight={1.5}
             fontWeight={600}
             marginTop={{xl:"4", md:"3", base:"2"}}
@@ -70,6 +70,7 @@ function Now(){
                 Ongoing Activities
                 </Text>
             </Heading>
+            }
             <Accordion allowToggle>
                 {AccordionList}
             </Accordion>
