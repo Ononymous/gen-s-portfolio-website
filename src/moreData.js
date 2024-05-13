@@ -65,7 +65,7 @@ const nodeData = [
     },
     {
         name: 'React Native',
-        level: 'Experienced'
+        level: 'Proficient'
     },
     {
         name: 'Expo Mobile Development',
@@ -115,7 +115,7 @@ export const nodeMap = nodeData.map((data, index) =>
 const pyData = [
     {
         name: 'PyTorch',
-        level: 'Somewhat experienced'
+        level: 'Experienced'
     },
     {
         name: 'TorchVision',
