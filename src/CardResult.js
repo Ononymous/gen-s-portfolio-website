@@ -25,7 +25,42 @@ function CardResult({type, year, lang, frame, send}) {
                     text: 'UCSB Data Science Club'
                 }
             ],
-            tags: ['Small Team', '2023-24', 'Python', 'PyTorch', 'React.js', 'JavaScript', 'AWS']
+            tags: ['Small Team', '2023-24', 'Python', 'PyTorch', 'React.js', 'JavaScript', 'AWS'],
+            type: ['ai', 'front']
+        },
+        /*
+        PROJECTS
+        GauchoRide, UCSB Advanced Application Programming Course (tinyurl.com/gauchoride) March 2024 - June 2024
+        Full-Stack Developer
+        ● Improved upon legacy code for GauchoRide, an application intended for students in need to schedule rides within UCSB
+        ● Implemented scheduler page for weekly recurring events, and created Storybook documentation for all new components
+        ● Created tests that passes coverage and mutation testing for both frontend and backend
+        Created integration and end-to-end tests for the application
+        */
+        {
+            title: 'GauchoRide: UCSB Ride Scheduler',
+            description: [
+                'Improved upon legacy code for GauchoRide, an application intended for students in need to schedule rides within UCSB.',
+                'Implemented scheduler page for weekly recurring events, and created Storybook documentation for all new components.',
+                'Created tests that passes coverage and mutation testing for both frontend and backend.',
+            ],
+            image: 'https://i.ibb.co/F67fNr8/Screenshot-2024-07-02-at-4-50-48-PM.png',
+            links: [
+                {
+                    url: 'https://gauchoride.dokku-00.cs.ucsb.edu/',
+                    text: 'Production'
+                },
+                {
+                    url: 'https://gauchoride.dokku-13.cs.ucsb.edu/',
+                    text: 'Development'
+                },
+                {
+                    url: 'https://github.com/ucsb-cs156-s24/proj-gauchoride-s24-5pm-5?tab=readme-ov-file',
+                    text: 'Github'
+                },
+            ],
+            tags: ['Large Team', '2023-24', 'React.js', 'Spring Boot', 'JavaScript', 'Java'],
+            type: ['front', 'back']
         },
         {
             title: 'KOS: Kernel Operating System',
@@ -45,7 +80,8 @@ function CardResult({type, year, lang, frame, send}) {
                     text: 'simulator header file'
                 },
             ],
-            tags: ['Small Team', '2023-24', 'C', 'Linux']
+            tags: ['Small Team', '2023-24', 'C', 'Linux'],
+            type: ['system']
         },
         {
             title: 'AirNet: AR Plane Tracker',
@@ -68,7 +104,8 @@ function CardResult({type, year, lang, frame, send}) {
                     text: 'Flightradar24'
                 }
             ],
-            tags: ['Small Team', '2023-24', 'React Native', 'JavaScript', 'Linear Algebra']
+            tags: ['Small Team', '2023-24', 'React Native', 'JavaScript', 'Linear Algebra'],
+            type: ['mobile']
         },
         {
             title: 'GauchoCourses: a Better Schedule Planner',
@@ -93,7 +130,8 @@ function CardResult({type, year, lang, frame, send}) {
                     text: 'UCSB Data Science Club'
                 }
             ],
-            tags: ['Large Team', '2022-23', 'Vue.js', 'Spring Boot', 'JavaScript']
+            tags: ['Large Team', '2022-23', 'Vue.js', 'Spring Boot', 'JavaScript'],
+            type: ['front', 'back']
         },
         {
             title: 'Aquimo LightShow',
@@ -113,7 +151,8 @@ function CardResult({type, year, lang, frame, send}) {
                     text: 'Aquimo LLC.'
                 },
             ],
-            tags: ['Internship', '2022-23', 'JavaScript', 'Cocos Creator', 'HTML/CSS']
+            tags: ['Internship', '2022-23', 'JavaScript', 'Cocos Creator', 'HTML/CSS'],
+            type: ['front', 'back']
         },
         {
             title: 'Noteblock.it: Music to Minecraft',
@@ -142,7 +181,8 @@ function CardResult({type, year, lang, frame, send}) {
                     text: 'UCSB Data Science Club'
                 },
             ],
-            tags: ['Small Team', '2022-23', 'PyTorch', 'Python', 'Streamlit']
+            tags: ['Small Team', '2022-23', 'PyTorch', 'Python', 'Streamlit'],
+            type: ['ai']
         },
         {
             title: 'Prototype Website for SOAR Foundation',
@@ -163,7 +203,8 @@ function CardResult({type, year, lang, frame, send}) {
                     text: 'SOAR foundation'
                 },
             ],
-            tags: ['Internship', '2021-22', 'Wix']
+            tags: ['Internship', '2021-22', 'Wix'],
+            type: ['front']
         },
         {
             title: 'Cryptaid: Decentralized donation platform',
@@ -187,7 +228,8 @@ function CardResult({type, year, lang, frame, send}) {
                     text: 'Coders SB'
                 },
             ],
-            tags: ['Small Team', '2021-22', 'React.js', 'Solidity', 'JavaScript', 'HTML/CSS']
+            tags: ['Small Team', '2021-22', 'React.js', 'Solidity', 'JavaScript', 'HTML/CSS'],
+            type: ['front']
         },
         {
             title: '30 Seconds',
@@ -216,7 +258,8 @@ function CardResult({type, year, lang, frame, send}) {
                     text: 'SB Hacks VIII'
                 },
             ],
-            tags: ['Small Team', '2021-22', 'React.js', 'JavaScript', 'HTML/CSS']
+            tags: ['Small Team', '2021-22', 'React.js', 'JavaScript', 'HTML/CSS'],
+            type: ['front']
         },
         {
             title: 'Fiesta',
@@ -241,36 +284,13 @@ function CardResult({type, year, lang, frame, send}) {
                     text: 'Coders SB'
                 },
             ],
-            tags: ['Small Team', '2021-22', 'React.js', 'JavaScript', 'HTML/CSS']
+            tags: ['Small Team', '2021-22', 'React.js', 'JavaScript', 'HTML/CSS'],
+            type: ['front']
         },
     ]
     const filteredData = exampleData.filter((data) => {
         if(type !== "all"){
-            if(data.tags[0] !== type){
-                return false;
-            }
-        }
-        if(year !== "all"){
-            if(data.tags[1] !== year){
-                return false;
-            }
-        }
-        if(frame.length !== 0){
-            for(let i = 0; i < frame.length; i++){
-                if(!data.tags.includes(frame[i])){
-                    return false;
-                }
-            }
-        }
-        if(lang.length !== 0){
-            for(let i = 0; i < lang.length; i++){
-                if(!data.tags.includes(lang[i])){
-                    return false;
-                }
-            }
-        }
-        if(send !== ""){
-            if(![data.title, data.description.join(' '), data.tags.join(' ')].join(' ').toLowerCase().includes(send)){
+            if(!data.type.includes(type)){
                 return false;
             }
         }

@@ -52,7 +52,11 @@ function Now(){
                 </Text>
             </Heading>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
-            I am currently taking Compilers (CMPSC 160), Computer Security (CMPSC 177), and Advanced Application Development (CMPSC 156) this quarter.
+            I am currently a third-year Computer Science major at the University of California, Santa Barbara (UCSB), progressing through the BS/MS program with an expected completion in June 2026. <br/>
+            </Text>
+            <br/>
+            <Text fontSize={{ base: 'md', lg: 'lg' }}>
+            I will be taking Artificial Intelligence (CMPSC 165A), Distributed Systems (CMPSC 171), and Computer Vision (CMPSC 181) next quarter.
             </Text>
             <br/>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>

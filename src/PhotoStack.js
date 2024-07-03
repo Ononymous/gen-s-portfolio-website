@@ -11,16 +11,21 @@ import {
     Stack,
     Link,
     Button,
-    Wrap
+    Wrap,
+    Menu,
+    MenuItem,
+    MenuButton,
+    MenuList,
 } from '@chakra-ui/react';
 
-import {FaLinkedinIn} from 'react-icons/fa'
-import {FiGithub, FiMail} from 'react-icons/fi'
-import {IoNewspaperOutline} from 'react-icons/io5'
+import { FaLinkedinIn } from 'react-icons/fa'
+import { FiGithub, FiMail } from 'react-icons/fi'
+import { ChevronDownIcon } from '@chakra-ui/icons';
 
 import photo from './images/photo.jpg';
 import { useColorMode } from '@chakra-ui/react';
-import Resume from './images/Resume.pdf'
+import FullResume from './images/FullResume.pdf'
+import BackResume from './images/BackResume.pdf'
 
 // add some space before the stack
 
@@ -29,25 +34,25 @@ function PhotoStack() {
     return (
         <Flex align={'center'} justifyContent={"center"} w="100%">
             <Stack
-            align={'center'}
-            spacing={{ base: 8, md: 16 }}
-            py={{ base: 12, md: 16 }}
-            w={{xl:"50%", md:"70%", base:"90%"}}
-            direction={{ base: 'column', md: 'row' }}>
-                <Flex
-                flex={1}
-                justify={'center'}
                 align={'center'}
-                position={'relative'}
-                w={'full'}>
+                spacing={{ base: 8, md: 16 }}
+                py={{ base: 12, md: 16 }}
+                w={{ xl: "55%", lg: "68%", md: "82%", base: "95%" }}
+                direction={{ base: 'column', md: 'row' }}>
+                <Flex
+                    flex={1}
+                    justify={'center'}
+                    align={'center'}
+                    position={'relative'}
+                    w={'full'}>
                     <Box
                         position={'relative'}
-                        height={{xl:'350px', md:'280px', base:'250px'}}
+                        height={{ xl: '350px', md: '280px', base: '250px' }}
                         rounded={'10'}
                         boxShadow={'dark-lg'}
-                        width={{xl:"full", md:"80%", base:"70%"}}
+                        width={{ xl: "full", md: "80%", base: "70%" }}
                         overflow={'hidden'}>
-                        
+
                         <Image
                             alt={'selfie'}
                             fit={'cover'}
@@ -60,17 +65,18 @@ function PhotoStack() {
                 </Flex>
                 <Stack flex={1} spacing={{ base: 5, md: 10 }} w="100%">
                     <Heading
-                    lineHeight={1.1}
-                    fontWeight={700}
-                    fontSize={{ base: '3xl', md: '4xl', lg: '6xl' }}>
+                        lineHeight={1.1}
+                        fontWeight={700}
+                        fontSize={{ base: '3xl', md: '4xl', lg: '6xl' }}>
                         <Text
                             as={'span'}
                             position={'relative'}>
                             Gen Tamada
                         </Text>
                     </Heading>
-                    <Text color={'gray.500'} fontSize={{ md: 'lg', lg: 'xl' }}>
-                    Currently a student at the University of California Santa Barbara, studying Computer Science. I am passionate about technology and its impact on society.
+                    <Text color={'gray.500'} fontSize={{ md: 'md', lg: 'lg' }}>
+                        I am passionate about Machine Learning, Computer Networking, Security, OS, and Distributed Systems. <br/>
+                        My goal is to become a developer who can bring real value to the world through my work.
                     </Text>
                     <Wrap spacing={3} align="center" justify="center">
                         <Link href="https://www.linkedin.com/in/gen-tamada/" isExternal>
@@ -103,17 +109,34 @@ function PhotoStack() {
                             </Button>
                         </Link>
 
-                        <Button
-                        leftIcon={<IoNewspaperOutline />}
-                        variant={colorMode === "light" ? "solid" : "outline"}
-                        colorScheme={"orange"}
-                        onClick={(event) => {
-                            event.preventDefault();
-                            window.open(Resume);
-                        }}
-                        >
-                        Resume
-                        </Button>
+                        <Menu>
+                            <MenuButton
+                                as={Button}
+                                leftIcon={<ChevronDownIcon />}
+                                variant={colorMode === "light" ? "solid" : "outline"}
+                                colorScheme={"orange"}
+                            >
+                                Resume
+                            </MenuButton>
+                            <MenuList>
+                                <MenuItem
+                                    onClick={(event) => {
+                                        event.preventDefault();
+                                        window.open(FullResume);
+                                    }}
+                                >
+                                    Full-Stack
+                                </MenuItem>
+                                <MenuItem
+                                    onClick={(event) => {
+                                        event.preventDefault();
+                                        window.open(BackResume);
+                                    }}
+                                >
+                                    System
+                                </MenuItem>
+                            </MenuList>
+                        </Menu>
                     </Wrap>
                 </Stack>
             </Stack>

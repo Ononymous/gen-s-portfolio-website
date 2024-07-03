@@ -10,16 +10,8 @@ const classData = [
         level: 'A'
     },
     {
-        name: 'Introduction to Computational Science (CMPSC 111)',
-        level: 'A'
-    },
-    {
         name: 'Data Structures and Algorithms II (CMPSC 130B)',
         level: 'A'
-    },
-    {
-        name: 'Automata and Formal Languages (CMPSC 138)',
-        level: 'A+'
     },
     {
         name: "Special Topics: Internet of Things (CMPSC 190B)",
@@ -39,18 +31,18 @@ const classData = [
     },
     {
         name: "Compilers (CMPSC 160)",
-        level: 'In progress'
+        level: 'A+'
     },
     {
         name: "Computer Security (CMPSC 177)",
-        level: 'In progress'
+        level: 'A'
     },
     {
         name: "Advanced Application Development (CMPSC 156)",
-        level: 'In progress'
+        level: 'A+'
     },
 ]
-export const classMap = classData.map((data, index) =>
+export const classMap = classData.reverse().map((data, index) =>
     <Flex key={index} justify="space-between" wrap="nowrap">
         <Text flex={1} minWidth="60%">{data.name}</Text>
         <Text flex={1} minWidth="40%" textAlign="right">{data.level}</Text>
@@ -92,16 +84,16 @@ const nodeData = [
         level: 'Experienced'
     },
     {
-        name: 'Moralis',
-        level: 'Somewhat experienced'
-    },
-    {
         name: 'React Navigation',
         level: 'Experienced'
     },
     {
         name: 'Firebase (Google Cloud Platform)',
         level: 'Experienced'
+    },
+    {
+        name: 'Moralis',
+        level: 'Somewhat experienced'
     },
 ]
 export const nodeMap = nodeData.map((data, index) =>
@@ -118,14 +110,6 @@ const pyData = [
         level: 'Experienced'
     },
     {
-        name: 'TorchVision',
-        level: 'Familiar'
-    },
-    {
-        name: 'TensorFlow',
-        level: 'Familiar'
-    },
-    {
         name: 'Pandas',
         level: 'Experienced'
     },
@@ -134,24 +118,32 @@ const pyData = [
         level: 'Experienced'
     },
     {
-        name: 'Matplotlib',
-        level: 'Experienced'
-    },
-    {
-        name: 'Scipy',
-        level: 'Familiar'
-    },
-    {
-        name: 'Anaconda',
-        level: 'Somewhat experienced'
-    },
-    {
         name: 'Librosa',
         level: 'Experienced'
     },
     {
         name: 'Streamlit',
         level: 'Experienced'
+    },
+    {
+        name: 'Matplotlib',
+        level: 'Experienced'
+    },
+    {
+        name: 'Anaconda',
+        level: 'Somewhat experienced'
+    },
+    {
+        name: 'TorchVision',
+        level: 'Familiar'
+    },
+    {
+        name: 'TensorFlow',
+        level: 'Familiar'
+    },
+    {
+        name: 'Scipy',
+        level: 'Familiar'
     },
 ]
 export const pyMap = pyData.map((data, index) =>
@@ -164,6 +156,10 @@ export const pyMap = pyData.map((data, index) =>
 
 const clubData = [
     {
+        name: 'UCSB Theta Tau Professional Engineering Fraternity',
+        level: 'Active (Profession Development Head)'
+    },
+    {
         name: 'Coders SB Club',
         level: 'Member (3 projects)'
     },
@@ -174,7 +170,7 @@ const clubData = [
     {
         name: 'SB Hacks',
         level: 'Participant (2 project)'
-    }
+    },
 ]
 export const clubMap = clubData.map((data, index) =>
     <Flex key={index} justify="space-between" wrap="nowrap">
@@ -185,6 +181,18 @@ export const clubMap = clubData.map((data, index) =>
 
 
 const langData = [
+    {
+        name: 'Japanese',
+        level: 'Native'
+    },
+    {
+        name: 'English',
+        level: 'Native'
+    },
+    {
+        name: 'Mandarin',
+        level: 'Native'
+    },
     {
         name: 'Python',
         level: 'Proficient'
@@ -211,7 +219,7 @@ const langData = [
     },
     {
         name: 'Java',
-        level: 'Somewhat experienced'
+        level: 'Experienced'
     },
     {
         name: 'Solidity',
@@ -228,21 +236,25 @@ export const langMap = langData.map((data, index) =>
 
 const techData = [
     {
+        name: 'Linux',
+        level: 'Proficient'
+    },
+    {
+        name: 'Git',
+        level: 'Proficient'
+    },
+    {
         name: 'Wix',
         level: 'Experienced'
     },
     {
-        name: 'Git (Version Control)',
+        name: 'Cocos Creator (Game Engine)',
         level: 'Experienced'
     },
     {
         name: 'Fusion 360 (3D modeling)',
         level: 'Somewhat experienced'
     },
-    {
-        name: 'Cocos Creator (Game Engine)',
-        level: 'Experienced'
-    }
 ]
 export const techMap = techData.map((data, index) =>
     <Flex key={index} justify="space-between" wrap="nowrap">

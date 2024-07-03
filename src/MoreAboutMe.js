@@ -49,11 +49,11 @@ function MoreAboutMe() {
   
   const gridItems = [
     { icon: MdSchool, label: 'Classes', content: classMap, description: 'Computer science classes with completion status.' },
-    { icon: MdGroup, label: 'Clubs', content: clubMap, description: 'Joined clubs with project completion counts.' },
-    { icon: MdCode, label: 'Python related', content: pyMap, description: 'Python libraries/frameworks and experience levels.' },
-    { icon: MdComputer, label: 'Node.js related', content: nodeMap, description: 'Node.js technologies and experience levels.' },
+    { icon: MdGroup, label: 'Organizations', content: clubMap, description: 'Joined Organizations with activities.' },
     { icon: MdLanguage, label: 'Languages', content: langMap, description: 'Known programming languages and proficiency.' },
     { icon: MdSettings, label: 'Technologies', content: techMap, description: 'Technologies/tools used and experience levels.' },
+    { icon: MdCode, label: 'Python related', content: pyMap, description: 'Python libraries/frameworks and experience levels.' },
+    { icon: MdComputer, label: 'Node.js related', content: nodeMap, description: 'Node.js technologies and experience levels.' },
   ];  
 
   return (
