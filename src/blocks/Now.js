@@ -1,8 +1,8 @@
 import React from 'react';
-import { Text, Heading, Box, Accordion } from "@chakra-ui/react";
-import "./App.css"
+import { Text, Heading, Box, Accordion, Link } from "@chakra-ui/react";
+import "../App.css"
 import { useColorMode } from "@chakra-ui/react";
-import NowAccordion from './NowAccordion';
+import NowAccordion from '../components/NowAccordion';
 
 function Now(){
     const { colorMode } = useColorMode();
@@ -33,12 +33,11 @@ function Now(){
     )
     return(
         <Box 
-        w={{xl:"55%", lg:"68%" , md:"82%", base:"95%"}} 
         py={{xl:"10", md:"7", base:"4"}}
         px={{xl:"10", md:"7", base:"4"}} 
         boxShadow="dark-lg"
         rounded={"2xl"}
-        className={colorMode==="light"?"now":"now-dark"}>
+        className={colorMode==="now"}>
             <Heading
             lineHeight={1.5}
             fontWeight={600}
@@ -52,7 +51,7 @@ function Now(){
                 </Text>
             </Heading>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
-            I am currently a third-year Computer Science major at the University of California, Santa Barbara (UCSB), progressing through the BS/MS program with an expected completion in June 2026. <br/>
+            I am currently a 4th year Computer Science major at the University of California, Santa Barbara (UCSB), progressing through the BS/MS program with an expected completion in June 2026. <br/>
             </Text>
             <br/>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
@@ -60,7 +59,7 @@ function Now(){
             </Text>
             <br/>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
-            As for extracurriculars, I have just finished my annual Data Science Club presentation, got a 2nd place, and currently focusing on MS application.
+            As for extracurriculars, I have just finished my annual <Link color='teal.300' href="https://www.datascienceucsb.org/events" isExternal>UCSB Data Science Club</Link> presentation, got a 2nd place out of 50+ groups, and currently focusing on MS program.
             </Text>
             {accordionListData.length !== 0 && <Heading
             lineHeight={1.5}

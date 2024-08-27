@@ -1,5 +1,5 @@
 import React from 'react';
-import ExpCards from './ExpCards';
+import ExpCards from './components/ExpCards';
 
 function CardResult({type, year, lang, frame, send}) {
     const exampleData = [
@@ -10,7 +10,7 @@ function CardResult({type, year, lang, frame, send}) {
                 'Introduced subtle details in the original image to make it appear like the target photo.',
                 'Successfully disrupted the feature-identifying capabilities of image-processing models.',
             ],
-            image: 'https://i.ibb.co/NTxSY0F/Refract-Poster.png',
+            image: 'https://i.ibb.co/9GT9b83/image.png',
             links: [
                 {
                     url: 'https://refract-two.vercel.app/',
@@ -28,15 +28,6 @@ function CardResult({type, year, lang, frame, send}) {
             tags: ['Small Team', '2023-24', 'Python', 'PyTorch', 'React.js', 'JavaScript', 'AWS'],
             type: ['ai', 'front']
         },
-        /*
-        PROJECTS
-        GauchoRide, UCSB Advanced Application Programming Course (tinyurl.com/gauchoride) March 2024 - June 2024
-        Full-Stack Developer
-        ● Improved upon legacy code for GauchoRide, an application intended for students in need to schedule rides within UCSB
-        ● Implemented scheduler page for weekly recurring events, and created Storybook documentation for all new components
-        ● Created tests that passes coverage and mutation testing for both frontend and backend
-        Created integration and end-to-end tests for the application
-        */
         {
             title: 'GauchoRide: UCSB Ride Scheduler',
             description: [
@@ -44,7 +35,7 @@ function CardResult({type, year, lang, frame, send}) {
                 'Implemented scheduler page for weekly recurring events, and created Storybook documentation for all new components.',
                 'Created tests that passes coverage and mutation testing for both frontend and backend.',
             ],
-            image: 'https://i.ibb.co/F67fNr8/Screenshot-2024-07-02-at-4-50-48-PM.png',
+            image: 'https://i.ibb.co/KFp3xXT/image.png',
             links: [
                 {
                     url: 'https://gauchoride.dokku-00.cs.ucsb.edu/',
@@ -69,7 +60,7 @@ function CardResult({type, year, lang, frame, send}) {
                 'Supports basic Linux commands like fork, exec, pipe, dup, etc.',
                 'For CS170 Operating System class at UCSB.',
             ],
-            image: 'https://i.ibb.co/GphpNWS/image.png',
+            image: 'https://i.ibb.co/MsJkJJK/image.png',
             links: [
                 {
                     url: 'https://sites.cs.ucsb.edu/~rich/class/cs170/labs/kos_start/index.html',
@@ -89,7 +80,7 @@ function CardResult({type, year, lang, frame, send}) {
                 'Developed a plane tracker that lists nearby planes, shows detailed information, and visualizes the plane on the map using AR.',
                 'Used React Native, Expo, and Flightradar24 API.',
             ],
-            image: 'https://i.ibb.co/zPD5dTs/Screenshot-2024-05-11-at-10-54-40-PM.png',
+            image: 'https://i.ibb.co/NZ4qkVS/image.png',
             links: [
                 {
                     url: 'https://github.com/Ononymous/AirNet',
@@ -140,7 +131,7 @@ function CardResult({type, year, lang, frame, send}) {
                 'Users can scan the QR code on the jumbotron and join the lightshow of their particular section.',
                 'Host DJ can use the UI designed with Cocos Creator to broadcast shows for the users\' device.',
             ],
-            image: 'https://i.ibb.co/rbzV3Qb/Light-Show-presented-by-Coca-Cola.png',
+            image: 'https://i.ibb.co/88TS6Hc/image.png',
             links: [
                 {
                     url: 'https://lightshow.dev.aquimo.com/?demo=1&product=resume',
@@ -161,8 +152,7 @@ function CardResult({type, year, lang, frame, send}) {
                 'Implemented a recurrent neural network in PyTorch.',
                 'Hosted the demo app on Streamlit Community Cloud.',
             ],
-            // image: 'https://lh3.googleusercontent.com/drAPMHPmJ1yAEYmcp5hkg08g08cK1jLgthiN8nCmXxKmtzOrCHmVFVtfA9uOzuHTqRvZWAq6n_PpNSbmiir1uCk=s400',
-            image: "https://storage.googleapis.com/s4a-prod-share-preview/default/st_app_screenshot_image/8383528e-3555-4d5c-a612-b43e9eefe609/Raw_App_Screenshot.png",
+            image: "https://i.ibb.co/pWbJ4YQ/image.png",
             links: [
                 {
                     url: 'https://ononymous-noteblockit-openunmixcli-54v27e.streamlit.app/',
@@ -191,8 +181,7 @@ function CardResult({type, year, lang, frame, send}) {
                 'Developed a prototype website for SOAR Foundation using Wix.',
                 'The SOAR Foundation was created to distribute scholarships to students.',
             ],
-            // image: 'https://i.ibb.co/mCZQ2pF/SOARGREENLogo.jpg',
-            image: 'https://i.ibb.co/7yb11gk/Home-Soar-Foundation.png',
+            image: 'https://i.ibb.co/z77TwK9/image.png',
             links: [
                 {
                     url: 'https://gen8009.wixsite.com/soar-foundation',
@@ -212,8 +201,7 @@ function CardResult({type, year, lang, frame, send}) {
                 'Spring quarter Coders SB project series (collab with UCSB Blockchain club)',
                 'Used Moralis.io blockchain to allow users to anonymously gather or send donations to the causes they are supporting.',
             ],
-            // image: 'https://i.ibb.co/L50pgyn/284461361-336177578482005-7239578205407661108-n.png',
-            image: 'https://i.ibb.co/Y8V8tpd/Cryptaid.png',
+            image: 'https://i.ibb.co/27vdpB5/image.png',
             links: [
                 {
                     url: 'https://cryptaid-calee14.vercel.app/',
@@ -238,8 +226,7 @@ function CardResult({type, year, lang, frame, send}) {
                 'Used a speech-to-text API, Assembly AI, to help users in job interview practices.',
                 'Learned and integrated the API into our React.js frontend in 2 days.',
             ],
-            // image: 'https://i.ibb.co/nPpYrbJ/Screenshot-20230207-121238.png',
-            image: 'https://i.ibb.co/JFRhhq0/30-Seconds.png',
+            image: 'https://i.ibb.co/4WmShrz/image.png',
             links: [
                 {
                     url: 'https://seconds-ef259.web.app/interview',
@@ -268,8 +255,7 @@ function CardResult({type, year, lang, frame, send}) {
                 'Created an app that helped students at Santa Barbara to find events happening nearby safely and more efficiently.',
                 'Learning React.js and API integration for the first time (Google Map).',
             ],
-            // image: 'https://i.ibb.co/ssxp8XS/Screenshot-20230207-121415.png',
-            image: 'https://i.ibb.co/sgDGmNc/Fiesta.png',
+            image: 'https://i.ibb.co/VDpHsZr/image.png',
             links: [
                 {
                     url: 'https://fiesta-5caa1.web.app/',
@@ -305,7 +291,6 @@ function CardResult({type, year, lang, frame, send}) {
     )
 
     return(
-        // lang.length !== 0 ? <>{cards}</> : <h1>No entry found</h1>
         <>{cards}</>
     )
 }

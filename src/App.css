@@ -1,34 +1,15 @@
 .now{
-  background-image: url("./images/Now-l.svg") !important;
-
   background-position: center;
   background-size: 60%;
-  background-repeat: no-repeat;
-}
-.now-dark{
-  background-image: url("./images/Now-d.svg") !important;
-
-  background-position: center;
-  background-size: 60%;
-  background-repeat: no-repeat;
-}
-
-.future{
-  background-image: url("./images/Future-l.svg") !important;
-
-  background-position: center;
-  background-size: 80%;
-  background-repeat: no-repeat;
-}
-.future-dark{
-  background-image: url("./images/Future-d.svg") !important;
-
-  background-position: center;
-  background-size: 80%;
   background-repeat: no-repeat;
 }
 
 .spacer{
   min-height: 50px;
   width: 100%;
+}
+
+.center{
+  align-items: center;
+  justify-content: center;
 }

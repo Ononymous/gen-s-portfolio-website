@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, Heading, Box, Tabs, Tab, TabList } from "@chakra-ui/react";
-import "./App.css"
-import CardResult from './CardResult';
+import "../App.css"
+import CardResult from '../CardResult';
 import { useState } from 'react';
 
 
@@ -10,9 +10,9 @@ function Experiences(){
 
     return(
         <Box 
-        w={{xl:"55%", lg:"68%" , md:"82%", base:"95%"}} 
         py={{xl:"10", md:"7", base:"4"}}
-        px={{xl:"10", md:"7", base:"4"}} 
+        px={{xl:"10", md:"7", base:"4"}}
+        maxW={"100%"}
         boxShadow="dark-lg" 
         rounded={"2xl"}>
             <Heading

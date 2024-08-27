@@ -6,8 +6,8 @@ import {
   useColorModeValue,
   useColorMode,
 } from '@chakra-ui/react';
-import logo from './images/logo.svg';
-import darklogo from './images/darklogo.svg';
+import logo from '../images/logo.svg';
+import darklogo from '../images/darklogo.svg';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
 

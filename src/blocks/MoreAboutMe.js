@@ -1,7 +1,7 @@
 import React from 'react';
 import { VStack, Button, Icon, Text, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, useDisclosure, Box, Heading, SimpleGrid, useColorMode } from '@chakra-ui/react';
 import { MdSchool, MdGroup, MdCode, MdComputer, MdLanguage, MdSettings } from 'react-icons/md';
-import { classMap, clubMap, pyMap, nodeMap, langMap, techMap } from './moreData';
+import { classMap, clubMap, pyMap, nodeMap, langMap, techMap } from '../moreData';
 
 function MoreAboutMe() {
   const { colorMode } = useColorMode();
@@ -58,7 +58,7 @@ function MoreAboutMe() {
 
   return (
     <Box
-      w={{ xl: '55%', lg: '68%', md: '82%', base: '95%' }}
+      w={"100%"}
       py={{ xl: '10', md: '7', base: '4' }}
       px={{ xl: '10', md: '7', base: '4' }}
       minH="50vh"
