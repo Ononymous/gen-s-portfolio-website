@@ -1,7 +1,7 @@
 import React from 'react';
 import { VStack, Button, Icon, Text, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, useDisclosure, Box, Heading, SimpleGrid, useColorMode } from '@chakra-ui/react';
-import { MdSchool, MdGroup, MdCode, MdComputer, MdLanguage, MdSettings } from 'react-icons/md';
-import { classMap, clubMap, pyMap, nodeMap, langMap, techMap } from '../moreData';
+import { MdSchool, MdGroup, MdSettings } from 'react-icons/md';
+import { classMap, clubMap, techMap } from '../moreData';
 
 function MoreAboutMe() {
   const { colorMode } = useColorMode();
@@ -9,7 +9,7 @@ function MoreAboutMe() {
   const [modalContent, setModalContent] = React.useState('');
 
   const handleClick = (content, description) => {
-    setModalContent({content: content, description: description});
+    setModalContent({ content: content, description: description });
     onOpen();
   };
 
@@ -46,15 +46,12 @@ function MoreAboutMe() {
       </VStack>
     </Button>
   );
-  
+
   const gridItems = [
     { icon: MdSchool, label: 'Classes', content: classMap, description: 'Computer science classes with completion status.' },
     { icon: MdGroup, label: 'Organizations', content: clubMap, description: 'Joined Organizations with activities.' },
-    { icon: MdLanguage, label: 'Languages', content: langMap, description: 'Known programming languages and proficiency.' },
     { icon: MdSettings, label: 'Technologies', content: techMap, description: 'Technologies/tools used and experience levels.' },
-    { icon: MdCode, label: 'Python related', content: pyMap, description: 'Python libraries/frameworks and experience levels.' },
-    { icon: MdComputer, label: 'Node.js related', content: nodeMap, description: 'Node.js technologies and experience levels.' },
-  ];  
+  ];
 
   return (
     <Box

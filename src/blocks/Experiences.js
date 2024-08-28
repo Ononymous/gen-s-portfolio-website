@@ -1,12 +1,29 @@
 import React from 'react';
 import { Text, Heading, Box, Tabs, Tab, TabList } from "@chakra-ui/react";
 import "../App.css"
-import CardResult from '../CardResult';
+import ExpCards from '../components/ExpCards';
+import projects from '../data/projects.json'
 import { useState } from 'react';
 
 
 function Experiences(){
     const [type, setType] = useState('all');
+
+    const filteredData = projects.filter((data) => {
+        if(type !== "all"){
+            if(!data.type.includes(type)){
+                return false;
+            }
+        }
+        return true;
+    })
+
+    const cards = filteredData.map((card, index) => 
+        <ExpCards 
+        key={index} 
+        {...card}
+        />
+    )
 
     return(
         <Box 
@@ -46,7 +63,7 @@ function Experiences(){
                     </TabList>
                 </Tabs>
                 <Box w="100%" minHeight={"40vh"} maxHeight={"80vh"} rounded="2xl" mt="5" overflow="auto">
-                    <CardResult type={type}/>
+                    {cards}
                 </Box>
             </Box>
         </Box>
