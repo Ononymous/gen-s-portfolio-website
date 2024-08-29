@@ -41,30 +41,24 @@ function PhotoStack() {
                 pt={{ base: 12, md: 24 }}
                 pb={{ base: 12, md: 16 }}
                 direction={{ base: 'column', md: 'row' }}>
-                <Flex
-                    flex={1}
-                    justify={'center'}
-                    align={'center'}
+                <Box
                     position={'relative'}
-                    w={'full'}>
-                    <Box
-                        position={'relative'}
-                        height={{ xl: '350px', md: '280px', base: '250px' }}
-                        rounded={'10'}
-                        boxShadow={'dark-lg'}
-                        width={{ xl: "full", md: "80%", base: "70%" }}
-                        overflow={'hidden'}>
+                    height={{ xl: '350px', md: '280px', base: '250px' }}
+                    rounded={'10'}
+                    flex={1}
+                    boxShadow={'dark-lg'}
+                    width={{ xl: "full", md: "80%", base: "70%" }}
+                    overflow={'hidden'}>
 
-                        <Image
-                            alt={'selfie'}
-                            fit={'cover'}
-                            align={'center'}
-                            w={'100%'}
-                            h={'100%'}
-                            src={photo}
-                        />
-                    </Box>
-                </Flex>
+                    <Image
+                        alt={'selfie'}
+                        fit={'cover'}
+                        align={'center'}
+                        w={'100%'}
+                        h={'100%'}
+                        src={photo}
+                    />
+                </Box>
                 <Stack flex={1} spacing={{ base: 5, md: 5 }} w="100%" justify={'start'}>
                     <Heading
                         lineHeight={1.1}

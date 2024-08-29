@@ -18,46 +18,16 @@
         "name": "Python",
         "level": 90,
         "subclass": [
-            {
-                "name": "Collections",
-                "level": 90
-            },
-            {
-                "name": "PyTorch",
-                "level": 80
-            },
-            {
-                "name": "OpenCV",
-                "level": 80
-            },
-            {
-                "name": "NumPy",
-                "level": 80
-            },
-            {
-                "name": "Librosa",
-                "level": 75
-            },
-            {
-                "name": "Streamlit",
-                "level": 70
-            },
-            {
-                "name": "Matplotlib",
-                "level": 68
-            },
-            {
-                "name": "Anaconda",
-                "level": 68
-            },
-            {
-                "name": "TorchVision",
-                "level": 65
-            },
-            {
-                "name": "TensorFlow",
-                "level": 60
-            }
+            "Collections",
+            "PyTorch",
+            "OpenCV",
+            "NumPy",
+            "Librosa",
+            "Streamlit",
+            "Matplotlib",
+            "Anaconda",
+            "TorchVision",
+            "TensorFlow"
         ]
     },
     {
@@ -76,38 +46,14 @@
         "name": "JavaScript",
         "level": 85,
         "subclass": [
-            {
-                "name": "Node.js",
-                "level": 90
-            },
-            {
-                "name": "React.js",
-                "level": 90
-            },
-            {
-                "name": "Expo Mobile",
-                "level": 85
-            },
-            {
-                "name": "React Native",
-                "level": 80
-            },
-            {
-                "name": "Chakra UI",
-                "level": 80
-            },
-            {
-                "name": "Tailwind CSS",
-                "level": 75
-            },
-            {
-                "name": "Axios",
-                "level": 75
-            },
-            {
-                "name": "Firebase",
-                "level": 75
-            }
+            "Node.js",
+            "React.js",
+            "Expo Mobile",
+            "React Native",
+            "Chakra UI",
+            "Tailwind CSS",
+            "Axios",
+            "Firebase"
         ]
     },
     {
@@ -122,10 +68,7 @@
         "name": "Java",
         "level": 68,
         "subclass": [
-            {
-                "name": "Spring Boot",
-                "level": 68
-            }
+            "Spring Boot"
         ]
     },
     {

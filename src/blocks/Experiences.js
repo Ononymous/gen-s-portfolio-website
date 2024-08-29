@@ -50,10 +50,16 @@ function Experiences(){
             w="fill" 
             border='1px' 
             borderColor='gray.200'
-            height={"90vh"}
             p="4">
                 <Tabs variant='enclosed'>
-                    <TabList mb='1em'>
+                    <TabList mb='1em' 
+                    overflowX="scroll" 
+                    sx={{
+                        scrollbarWidth: 'none',
+                        '::-webkit-scrollbar': {
+                        display: 'none',
+                        },
+                    }}>
                         <Tab onClick={() => setType("all")}>All</Tab>
                         <Tab onClick={() => setType("ai")}>Machine Learning</Tab>
                         <Tab onClick={() => setType("front")}>Frontend</Tab>
@@ -62,7 +68,7 @@ function Experiences(){
                         <Tab onClick={() => setType("mobile")}>Mobile</Tab>
                     </TabList>
                 </Tabs>
-                <Box w="100%" minHeight={"40vh"} maxHeight={"80vh"} rounded="2xl" mt="5" overflow="auto">
+                <Box w="100%" minHeight={"40vh"} maxHeight={"78vh"} rounded="2xl" mt="5" overflow="auto">
                     {cards}
                 </Box>
             </Box>

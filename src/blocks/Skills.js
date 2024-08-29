@@ -12,6 +12,9 @@ import {
     AccordionPanel,
     useColorMode,
     AccordionIcon,
+    Stack,
+    Grid,
+    GridItem
 } from '@chakra-ui/react';
 import skills from '../data/skills.json';
 
@@ -25,152 +28,6 @@ import { FaGit } from "react-icons/fa6";
 
 
 export default function Skills() {
-    // [
-    //     {
-    //         "name": "English",
-    //         "label": "Native",
-    //         "level": 97
-    //     },
-    //     {
-    //         "name": "Japanese",
-    //         "label": "Native",
-    //         "level": 95
-    //     },
-    //     {
-    //         "name": "Mandarin",
-    //         "label": "Native",
-    //         "level": 95
-    //     },
-    //     {
-    //         "name": "Python",
-    //         "level": 90,
-    //         "subclass": [
-    //             {
-    //                 "name": "collections",
-    //                 "level": 90
-    //             },
-    //             {
-    //                 "name": "PyTorch",
-    //                 "level": 80
-    //             },
-    //             {
-    //                 "name": "Pandas",
-    //                 "level": 80
-    //             },
-    //             {
-    //                 "name": "NumPy",
-    //                 "level": 80
-    //             },
-    //             {
-    //                 "name": "Librosa",
-    //                 "level": 75
-    //             },
-    //             {
-    //                 "name": "Streamlit",
-    //                 "level": 70
-    //             },
-    //             {
-    //                 "name": "Matplotlib",
-    //                 "level": 68
-    //             },
-    //             {
-    //                 "name": "Anaconda",
-    //                 "level": 68
-    //             },
-    //             {
-    //                 "name": "TorchVision",
-    //                 "level": 65
-    //             },
-    //             {
-    //                 "name": "TensorFlow",
-    //                 "level": 60
-    //             },
-    //             {
-    //                 "name": "Scipy",
-    //                 "level": 60
-    //             }
-    //         ]
-    //     },
-    //     {
-    //         "name": "C++",
-    //         "level": 90
-    //     },
-    //     {
-    //         "name": "C",
-    //         "level": 85
-    //     },
-    //     {
-    //         "name": "JavaScript",
-    //         "level": 85,
-    //         "subclass": [
-    //             {
-    //                 "name": "Node.js",
-    //                 "level": 90
-    //             },
-    //             {
-    //                 "name": "React.js",
-    //                 "level": 90
-    //             },
-    //             {
-    //                 "name": "Expo Mobile Development",
-    //                 "level": 85
-    //             },
-    //             {
-    //                 "name": "React Native",
-    //                 "level": 80
-    //             },
-    //             {
-    //                 "name": "Chakra UI",
-    //                 "level": 80
-    //             },
-    //             {
-    //                 "name": "Tailwind CSS",
-    //                 "level": 75
-    //             },
-    //             {
-    //                 "name": "Axios",
-    //                 "level": 75
-    //             },
-    //             {
-    //                 "name": "React Navigation",
-    //                 "level": 75
-    //             },
-    //             {
-    //                 "name": "Firebase",
-    //                 "level": 75
-    //             }
-    //         ]
-    //     },
-    //     {
-    //         "name": "Linux",
-    //         "level": 80
-    //     },
-    //     {
-    //         "name": "HTML/CSS",
-    //         "level": 70
-    //     },
-    //     {
-    //         "name": "Java",
-    //         "level": 68,
-    //         "subclass": [
-    //             {
-    //                 "name": "Spring Boot",
-    //                 "level": 68
-    //             }
-    //         ]
-    //     },
-    //     {
-    //         "name": "Solidity",
-    //         "level": 65
-    //     },
-    //     {
-    //         "name": "SQL",
-    //         "level": 60
-    //     }
-    // ]
-    // i want to map the skills data to a list of components, each with its title, progress bar from chakra, and a label depending on the level (if provided, use the specific label)
-    // instead of using box, use accordion for each skill, and for each subskill, use a box
-    // if skill has no subclass, just render the skill with no button to expand
 
     const LabelFromLevel = (level) => {
         switch (Math.ceil(level / 10)) {
@@ -197,18 +54,6 @@ export default function Skills() {
         }
     }
 
-    const renderSubSkills = (subskills) => {
-        return subskills.map((subskill, index) => {
-            return (
-                <Flex direction="row" justify="center" align="center" key={index} py={2} w="100%">
-                    <Text ml="5%" w="10%">{subskill.name}</Text>
-                    <Progress value={subskill.level} w="60%" mx="5%" />
-                    <Text w="15%">{subskill.label ? subskill.label : LabelFromLevel(subskill.level)}</Text>
-                </Flex>
-            )
-        })
-    }
-
     const IconMap = {
         "Mandarin": IoLanguage,
         "Japanese": TbLanguageHiragana,
@@ -227,33 +72,43 @@ export default function Skills() {
 
     const { colorMode } = useColorMode();
 
-    // 
+    const renderSubSkills = (subskills) => {
+        return subskills.map((subskill, index) => {
+            return (
+                <GridItem key={index}>{subskill}</GridItem>
+            )
+        })
+    }
+
     const skillList = skills.map((skill, index) => {
         return (
             <AccordionItem key={index}>
                 <AccordionButton>
-                    <Icon 
-                        as={IconMap[skill.name]} 
-                        boxSize={"4.5%"}
-                        p="0.25%"
-                        color={colorMode === 'light' ? 'white' : 'orange'}
-                        backgroundColor={colorMode === 'light' ? 'orange' : 'none'}
-                        aria-label={skill.name}
-                        borderRadius="10px"
-                        borderWidth="2px"
-                        borderColor="orange" />
-                    <Box w="8%" ml="2%" textAlign="left">
-                        <Text fontWeight={"semibold"}>{skill.name}</Text>
+                    <Box direction="column" w="100%">
+                        <Stack direction="row" w="100%" justify="start" align="center">
+                            <Stack direction="row" w="95%" justify="start" align="center">
+                                <Icon 
+                                    as={IconMap[skill.name]} 
+                                    boxSize={"8%"}
+                                    p="1%"
+                                    color={'gray.500'}
+                                    aria-label={skill.name} />
+                                <Box w="20%" textAlign="left">
+                                    <Text fontWeight={"semibold"}>{skill.name}</Text>
+                                </Box>
+                                <Box w="42%"/>
+                                <Text justify="center" align="end" w="30%">{skill.label ? skill.label : LabelFromLevel(skill.level)}</Text>
+                            </Stack>
+                            {skill.subclass && <AccordionIcon boxSize={"5%"} />}
+                        </Stack>
+                        <Progress value={skill.level} w="87%" ml="7.6%"/>
                     </Box>
-                    <Progress value={skill.level} w="60%" mx="5%"/>
-                    <Text justify="right" align="start" fontWeight={"semibold"} w="10%">{skill.label ? skill.label : LabelFromLevel(skill.level)}</Text>
-                    {skill.subclass && <AccordionIcon w="5%" />}
                 </AccordionButton>
-                {
-                    skill.subclass && <AccordionPanel pb={4}>
+                {skill.subclass && <AccordionPanel pb={4}>
+                    <Grid templateColumns='repeat(3, 1fr)' gap={4} p="3" bg="gray.100">
                         {renderSubSkills(skill.subclass)}
-                    </AccordionPanel>
-                }
+                    </Grid>
+                </AccordionPanel>}
             </AccordionItem>
         )
     })
@@ -264,6 +119,7 @@ export default function Skills() {
             boxShadow="dark-lg"
             rounded={"2xl"}
             w="100%"
+            flex={1}
         >
             <Heading
                 lineHeight={1.5}

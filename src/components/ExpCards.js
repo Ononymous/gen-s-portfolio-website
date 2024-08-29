@@ -28,7 +28,7 @@ function ExpCards({ title, description, image, links, tags }){
         overflow='hidden'
         variant='outline'
         rounded={"2xl"}
-        mb='3'
+        mb='10'
         mr="2"
         ml="2"
         >

@@ -49,8 +49,6 @@ function MoreAboutMe() {
 
   const gridItems = [
     { icon: MdSchool, label: 'Classes', content: classMap, description: 'Computer science classes with completion status.' },
-    { icon: MdGroup, label: 'Organizations', content: clubMap, description: 'Joined Organizations with activities.' },
-    { icon: MdSettings, label: 'Technologies', content: techMap, description: 'Technologies/tools used and experience levels.' },
   ];
 
   return (
@@ -73,9 +71,7 @@ function MoreAboutMe() {
           More About Me
         </Text>
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
-        {gridItems.map((item) => renderGridItem(item.icon, item.label, item.description, item.content))}
-      </SimpleGrid>
+      {gridItems.map((item) => renderGridItem(item.icon, item.label, item.description, item.content))}
       <Modal isOpen={isOpen} onClose={onClose} isCentered size='xl'
         motionPreset='slideInBottom'>
         <ModalOverlay />
