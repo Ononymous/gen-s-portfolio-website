@@ -18,7 +18,9 @@
         "name": "Python",
         "level": 90,
         "subclass": [
-            "Collections",
+            "Django",
+            "Cuda",
+            "Pytest",
             "PyTorch",
             "OpenCV",
             "NumPy",
@@ -46,13 +48,14 @@
         "name": "JavaScript",
         "level": 85,
         "subclass": [
+            "Next.js",
+            "Jest testing",
             "Node.js",
             "React.js",
             "Expo Mobile",
             "React Native",
-            "Chakra UI",
             "Tailwind CSS",
-            "Axios",
+            "Vue.js",
             "Firebase"
         ]
     },
@@ -77,6 +80,10 @@
     },
     {
         "name": "SQL",
-        "level": 60
+        "level": 60,
+        "subclass": [
+            "PostgreSQL",
+            "MySQL"
+        ]
     }
 ]
