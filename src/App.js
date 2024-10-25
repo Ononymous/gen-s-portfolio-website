@@ -39,9 +39,9 @@ function App() {
             <Spacer/>
           </Box>
         </Stack>
+        {/* <Box className="spacer"></Box>
         <Box className="spacer"></Box>
-        <Box className="spacer"></Box>
-        <MoreAboutMe/>
+        <MoreAboutMe/> */}
       </Flex>
       <Footer/>
       <Analytics />

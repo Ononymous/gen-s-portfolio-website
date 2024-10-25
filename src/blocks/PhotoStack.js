@@ -44,15 +44,15 @@ function PhotoStack() {
                 <Box
                     position={'relative'}
                     height={{ xl: '350px', md: '280px', base: '250px' }}
-                    rounded={'10'}
+                    // rounded={'10'}
                     flex={1}
-                    boxShadow={'dark-lg'}
+                    // boxShadow={'dark-lg'}
                     width={{ xl: "full", md: "80%", base: "70%" }}
                     overflow={'hidden'}>
 
                     <Image
                         alt={'selfie'}
-                        fit={'cover'}
+                        fit={'contain'}
                         align={'center'}
                         w={'100%'}
                         h={'100%'}
