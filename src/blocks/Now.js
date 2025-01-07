@@ -65,10 +65,10 @@ function Now(){
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
                 Have participated in the project series of UCSB Data Science Club, Coders SB, SB Hacks in the past, and have successfully risen up the ranks in each of them.
             </Text>
-            <br/>
+            {/* <br/>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
                 Attended previous Finalist Panel for the UCSB Data Science Club for supporting the club's growth and development.
-            </Text>
+            </Text> */}
         </Box>
     )
 }
