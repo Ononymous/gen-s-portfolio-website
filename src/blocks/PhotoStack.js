@@ -71,7 +71,7 @@ function PhotoStack() {
                         </Text>
                     </Heading>
                     <Text color={'gray.500'} fontSize={{ md: 'md', lg: 'lg' }}>
-                        4th year CS student at UCSB, passionate about Machine Learning, Computer Networking, Security, OS, and Distributed Systems. <br/>
+                        4th year CS major BS/MS student at UCSB, passionate about Machine Learning, Computer Networking, Security, OS, and Distributed Systems. <br/>
                         My goal is to become a developer who can bring real value to the world through my work.
                     </Text>
                     <Wrap spacing={3} align="center" justify="left" w="100%">
