@@ -1,5 +1,30 @@
 [
     {
+        "title": "Refract: Cloaking Photos for Privacy",
+        "description": [
+            "Developed a model that cloaks photos of individuals to protect against unauthorized training for deepfakes, facial recognition, and other harmful forms of identity theft.",
+            "Introduced subtle details in the original image to make it appear like the target photo.",
+            "Successfully disrupted the feature-identifying capabilities of image-processing models."
+        ],
+        "image": "refract.png",
+        "links": [
+            {
+                "url": "https://refract-two.vercel.app/",
+                "text": "Demo"
+            },
+            {
+                "url": "https://github.com/heyyysus/refract",
+                "text": "Github"
+            },
+            {
+                "url": "https://datascienceucsb.org",
+                "text": "UCSB Data Science Club"
+            }
+        ],
+        "tags": ["Small Team", "2023-24", "Python", "PyTorch", "React.js", "JavaScript", "AWS"],
+        "type": ["ai", "front"]
+    },
+    {
         "title":"Laminar: Dataflow computation for IoT",
         "description":[
             "Simple API for implementing dataflow programs for end-to-end IoT applications.",
@@ -31,31 +56,6 @@
             "IoT"
         ],
         "type":["system"]
-    },
-    {
-        "title": "Refract: Cloaking Photos for Privacy",
-        "description": [
-            "Developed a model that cloaks photos of individuals to protect against unauthorized training for deepfakes, facial recognition, and other harmful forms of identity theft.",
-            "Introduced subtle details in the original image to make it appear like the target photo.",
-            "Successfully disrupted the feature-identifying capabilities of image-processing models."
-        ],
-        "image": "refract.png",
-        "links": [
-            {
-                "url": "https://refract-two.vercel.app/",
-                "text": "Demo"
-            },
-            {
-                "url": "https://github.com/heyyysus/refract",
-                "text": "Github"
-            },
-            {
-                "url": "https://datascienceucsb.org",
-                "text": "UCSB Data Science Club"
-            }
-        ],
-        "tags": ["Small Team", "2023-24", "Python", "PyTorch", "React.js", "JavaScript", "AWS"],
-        "type": ["ai", "front"]
     },
     {
         "title": "GauchoRide: UCSB Ride Scheduler",
