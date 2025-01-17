@@ -6,7 +6,7 @@
             "Introduced subtle details in the original image to make it appear like the target photo.",
             "Successfully disrupted the feature-identifying capabilities of image-processing models."
         ],
-        "image": "https://i.ibb.co/9GT9b83/image.png",
+        "image": "refract.png",
         "links": [
             {
                 "url": "https://refract-two.vercel.app/",
@@ -31,7 +31,7 @@
             "Implemented scheduler page for weekly recurring events, and created Storybook documentation for all new components.",
             "Created tests that passes coverage and mutation testing for both frontend and backend."
         ],
-        "image": "https://i.ibb.co/KFp3xXT/image.png",
+        "image": "gauchoride.png",
         "links": [
             {
                 "url": "https://gauchoride.dokku-00.cs.ucsb.edu/",
@@ -56,7 +56,7 @@
             "Supports basic Linux commands like fork, exec, pipe, dup, etc.",
             "For CS170 Operating System class at UCSB."
         ],
-        "image": "https://i.ibb.co/MsJkJJK/image.png",
+        "image": "kos.png",
         "links": [
             {
                 "url": "https://sites.cs.ucsb.edu/~rich/class/cs170/labs/kos_start/index.html",
@@ -76,7 +76,7 @@
             "Developed a plane tracker that lists nearby planes, shows detailed information, and visualizes the plane on the map using AR.",
             "Used React Native, Expo, and Flightradar24 API."
         ],
-        "image": "https://i.ibb.co/NZ4qkVS/image.png",
+        "image": "airnet.png",
         "links": [
             {
                 "url": "https://github.com/Ononymous/AirNet",
@@ -102,7 +102,7 @@
             "Leagacy code from UCSB Data Science Club alumni",
             "Sponsored by UCSB"
         ],
-        "image": "https://i.ibb.co/xHSVwMS/image.png",
+        "image": "gauchocourse.png",
         "links": [
             {
                 "url": "https://gauchocourses.datascienceucsb.org/#/",
@@ -127,7 +127,7 @@
             "Users can scan the QR code on the jumbotron and join the lightshow of their particular section.",
             "Host DJ can use the UI designed with Cocos Creator to broadcast shows for the users\" device."
         ],
-        "image": "https://i.ibb.co/88TS6Hc/image.png",
+        "image": "aquimo.png",
         "links": [
             {
                 "url": "https://lightshow.dev.aquimo.com/?demo=1&product=resume",
@@ -148,7 +148,7 @@
             "Implemented a recurrent neural network in PyTorch.",
             "Hosted the demo app on Streamlit Community Cloud."
         ],
-        "image": "https://i.ibb.co/pWbJ4YQ/image.png",
+        "image": "noteblock.png",
         "links": [
             {
                 "url": "https://ononymous-noteblockit-openunmixcli-54v27e.streamlit.app/",
@@ -177,7 +177,7 @@
             "Developed a prototype website for SOAR Foundation using Wix.",
             "The SOAR Foundation was created to distribute scholarships to students."
         ],
-        "image": "https://i.ibb.co/z77TwK9/image.png",
+        "image": "soar.png",
         "links": [
             {
                 "url": "https://gen8009.wixsite.com/soar-foundation",
@@ -197,7 +197,7 @@
             "Spring quarter Coders SB project series (collab with UCSB Blockchain club)",
             "Used Moralis.io blockchain to allow users to anonymously gather or send donations to the causes they are supporting."
         ],
-        "image": "https://i.ibb.co/27vdpB5/image.png",
+        "image": "cryptaid.png",
         "links": [
             {
                 "url": "https://cryptaid-calee14.vercel.app/",
@@ -222,7 +222,7 @@
             "Used a speech-to-text API, Assembly AI, to help users in job interview practices.",
             "Learned and integrated the API into our React.js frontend in 2 days."
         ],
-        "image": "https://i.ibb.co/4WmShrz/image.png",
+        "image": "30s.png",
         "links": [
             {
                 "url": "https://seconds-ef259.web.app/interview",
@@ -251,7 +251,7 @@
             "Created an app that helped students at Santa Barbara to find events happening nearby safely and more efficiently.",
             "Learning React.js and API integration for the first time (Google Map)."
         ],
-        "image": "https://i.ibb.co/VDpHsZr/image.png",
+        "image": "fiesta.png",
         "links": [
             {
                 "url": "https://fiesta-5caa1.web.app/",

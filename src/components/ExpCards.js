@@ -36,7 +36,7 @@ function ExpCards({ title, description, image, links, tags }){
             objectFit='cover'
             w={{ base: '100%', md: '40%' }}
             maxH={{ base: '30vh', md: '100%' }}
-            src={image}
+            src={"/projects/"+image}
             alt='card image'
             />
 
