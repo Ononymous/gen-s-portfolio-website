@@ -1,5 +1,38 @@
 [
     {
+        "title":"Laminar: Dataflow computation for IoT",
+        "description":[
+            "Simple API for implementing dataflow programs for end-to-end IoT applications.",
+            "Allows complex applications to be built with simple dataflow programs and executed on a distributed IoT system, including microcontrollers.",
+            "Researching under Professor Wolski and Krintz to improve this legacy project of RACELab at UCSB"
+        ],
+        "image":"laminar.png",
+        "links":[
+            {
+                "text":"Github",
+                "url":"https://github.com/MAYHEM-Lab/laminar"
+            },
+            {
+                "text":"RACELab",
+                "url":"https://sites.cs.ucsb.edu/~ckrintz/racelab.html"
+            },
+            {
+                "text":"Original Laminar Paper",
+                "url":"https://sites.cs.ucsb.edu/~ckrintz/papers/laminar23.pdf"
+            }
+        ],
+        "tags":[
+            "Small Team",
+            "2024-25",
+            "C",
+            "C++",
+            "Linux",
+            "Docker",
+            "IoT"
+        ],
+        "type":["system"]
+    },
+    {
         "title": "Refract: Cloaking Photos for Privacy",
         "description": [
             "Developed a model that cloaks photos of individuals to protect against unauthorized training for deepfakes, facial recognition, and other harmful forms of identity theft.",
@@ -10,7 +43,7 @@
         "links": [
             {
                 "url": "https://refract-two.vercel.app/",
-                "text": "demo"
+                "text": "Demo"
             },
             {
                 "url": "https://github.com/heyyysus/refract",
@@ -23,31 +56,6 @@
         ],
         "tags": ["Small Team", "2023-24", "Python", "PyTorch", "React.js", "JavaScript", "AWS"],
         "type": ["ai", "front"]
-    },
-    {
-        "description":[
-            "Simple API for implementing dataflow programs for end-to-end IoT applications.",
-            "Allows complex applications to be built with simple dataflow programs and executed on a distributed IoT system, including microcontrollers.",
-            "Researching under Professor Wolski and Krintz to improve this legacy project of RACELab at UCSB"
-        ],
-        "image":"laminar.png",
-        "links":[
-            {
-                "text":"Github",
-                "url":"https://github.com/MAYHEM-Lab/laminar"
-            }
-        ],
-        "tags":[
-            "Small Team",
-            "2024-25",
-            "C",
-            "C++",
-            "Linux",
-            "Docker",
-            "IoT"
-        ],
-        "title":"Laminar: Dataflow computation for IoT",
-        "type":["system"]
     },
     {
         "title": "GauchoRide: UCSB Ride Scheduler",
@@ -85,11 +93,11 @@
         "links": [
             {
                 "url": "https://sites.cs.ucsb.edu/~rich/class/cs170/labs/kos_start/index.html",
-                "text": "lab website"
+                "text": "Course page"
             },
             {
                 "url": "https://sites.cs.ucsb.edu/~rich/class/cs170/labs/kos_pipe/simulator_lab2.h",
-                "text": "simulator header file"
+                "text": "Simulator header file"
             }
         ],
         "tags": ["Small Team", "2023-24", "C", "Linux"],
@@ -131,7 +139,7 @@
         "links": [
             {
                 "url": "https://gauchocourses.datascienceucsb.org/#/",
-                "text": "website"
+                "text": "Production"
             },
             {
                 "url": "https://github.com/data-science-ucsb/gauchocourses",
@@ -156,7 +164,7 @@
         "links": [
             {
                 "url": "https://lightshow.dev.aquimo.com/?demo=1&product=resume",
-                "text": "demo"
+                "text": "Demo"
             },
             {
                 "url": "https://aquimo.com/",
@@ -177,7 +185,7 @@
         "links": [
             {
                 "url": "https://ononymous-noteblockit-openunmixcli-54v27e.streamlit.app/",
-                "text": "demo"
+                "text": "Demo"
             },
             {
                 "url": "https://github.com/Ononymous/Noteblockit",
@@ -206,7 +214,7 @@
         "links": [
             {
                 "url": "https://gen8009.wixsite.com/soar-foundation",
-                "text": "prototype website"
+                "text": "Prototype"
             },
             {
                 "url": "https://soarfoundation.net/en/home/",
@@ -226,7 +234,7 @@
         "links": [
             {
                 "url": "https://cryptaid-calee14.vercel.app/",
-                "text": "website"
+                "text": "Production"
             },
             {
                 "url": "https://github.com/calee14/cryptaid",
@@ -251,7 +259,7 @@
         "links": [
             {
                 "url": "https://seconds-ef259.web.app/interview",
-                "text": "website"
+                "text": "Production"
             },
             {
                 "url": "https://github.com/Ononymous/SBHacks_InterviewPrep",
@@ -280,7 +288,7 @@
         "links": [
             {
                 "url": "https://fiesta-5caa1.web.app/",
-                "text": "website"
+                "text": "Production"
             },
             {
                 "url": "https://github.com/Ononymous/fiesta",
