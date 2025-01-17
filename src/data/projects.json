@@ -25,6 +25,31 @@
         "type": ["ai", "front"]
     },
     {
+        "description":[
+            "Simple API for implementing dataflow programs for end-to-end IoT applications.",
+            "Allows complex applications to be built with simple dataflow programs and executed on a distributed IoT system, including microcontrollers.",
+            "Researching under Professor Wolski and Krintz to improve this legacy project of RACELab at UCSB"
+        ],
+        "image":"laminar.png",
+        "links":[
+            {
+                "text":"Github",
+                "url":"https://github.com/MAYHEM-Lab/laminar"
+            }
+        ],
+        "tags":[
+            "Small Team",
+            "2024-25",
+            "C",
+            "C++",
+            "Linux",
+            "Docker",
+            "IoT"
+        ],
+        "title":"Laminar: Dataflow computation for IoT",
+        "type":["system"]
+    },
+    {
         "title": "GauchoRide: UCSB Ride Scheduler",
         "description": [
             "Improved upon legacy code for GauchoRide, an application intended for students in need to schedule rides within UCSB.",
