@@ -1,5 +1,22 @@
 [
     {
+        "title": "Closet Tracker: Clothing Usage and Laundry App",
+        "description": [
+            "Mobile app built with React Native and Expo Go to help users track their wardrobe and laundry cycles.",
+            "Users can upload clothing images, track wear counts, plan and visualize outfits on a virtual avatar, and reset wear counts when items are moved to laundry.",
+            "Includes social features such as liking other users' outfits, and offers authentication and storage with Firebase and Supabase."
+        ],
+        "image": "closettracker.png",
+        "links": [
+            {
+                "url": "https://github.com/ucsb-cs148-w25/pj12-closettracker",
+                "text": "Github"
+            }
+        ],
+        "tags": ["Small Team", "2024-25", "React Native", "JavaScript", "Firebase", "Supabase", "Expo"],
+        "type": ["mobile"]
+    },    
+    {
         "title": "Refract: Cloaking Photos for Privacy",
         "description": [
             "Developed a model that cloaks photos of individuals to protect against unauthorized training for deepfakes, facial recognition, and other harmful forms of identity theft.",

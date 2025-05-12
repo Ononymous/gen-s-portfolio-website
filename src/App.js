@@ -4,7 +4,6 @@ import "./App.css"
 import PhotoStack from "./blocks/PhotoStack"
 import Now from "./blocks/Now.js";
 import Experiences from "./blocks/Experiences.js";
-import MoreAboutMe from "./blocks/MoreAboutMe.js";
 import Skills from "./blocks/Skills.js";
 
 import Navbar from "./components/Navbar"

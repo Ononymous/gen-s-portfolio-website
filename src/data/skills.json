@@ -24,17 +24,12 @@
             "PyTorch",
             "OpenCV",
             "NumPy",
-            "Librosa",
             "Streamlit",
             "Matplotlib",
             "Anaconda",
             "TorchVision",
             "TensorFlow"
         ]
-    },
-    {
-        "name": "Git",
-        "level": 90
     },
     {
         "name": "C++",
@@ -55,13 +50,20 @@
             "Expo Mobile",
             "React Native",
             "Tailwind CSS",
-            "Vue.js",
-            "Firebase"
+            "Vue.js"
         ]
     },
     {
         "name": "Linux",
         "level": 80
+    },
+    {
+        "name": "SQL",
+        "level": 70,
+        "subclass": [
+            "PostgreSQL",
+            "MySQL"
+        ]
     },
     {
         "name": "HTML/CSS",
@@ -71,19 +73,8 @@
         "name": "Java",
         "level": 68,
         "subclass": [
-            "Spring Boot"
-        ]
-    },
-    {
-        "name": "Solidity",
-        "level": 65
-    },
-    {
-        "name": "SQL",
-        "level": 60,
-        "subclass": [
-            "PostgreSQL",
-            "MySQL"
+            "Spring Boot",
+            "Oracle JDBC Driver"
         ]
     }
 ]
