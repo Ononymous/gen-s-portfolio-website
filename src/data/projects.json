@@ -1,5 +1,22 @@
 [
     {
+        "title": "Arista Networks: Distributed Switch Tooling",
+        "description": [
+            "Software Engineering Intern on the core EOS team, focusing on distributed network hardware for AI-scale workloads.",
+            "Refactored and enhanced internal CLI tools for the 7700R4 Distributed Etherlink Switch (DES), implementing an automated hardware configuration algorithm that reduced manual setup steps by over 80%.",
+            "Led cross-team efforts to design, document, and deploy new configuration workflows—improving system scalability, reliability, and onboarding for future hardware."
+        ],
+        "image": "arista.png",
+        "links": [
+            {
+                "text": "Arista Networks",
+                "url": "https://www.arista.com/"
+            }
+        ],
+        "tags": ["Internship", "2024-25", "Python", "C", "C++", "Linux","Network Engineering", "Distributed Systems"],
+        "type": ["system"]
+    },
+    {
         "title": "Closet Tracker: Clothing Usage and Laundry App",
         "description": [
             "Mobile app built with React Native and Expo Go to help users track their wardrobe and laundry cycles.",

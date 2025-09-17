@@ -3,14 +3,12 @@ import {
     Box,
     Text,
     Heading,
-    Flex,
     Icon,
     Progress,
     Accordion,
     AccordionItem,
     AccordionButton,
     AccordionPanel,
-    useColorMode,
     AccordionIcon,
     Stack,
     Grid,
@@ -21,10 +19,9 @@ import skills from '../data/skills.json';
 import { IoLanguage, IoLogoJavascript } from "react-icons/io5";
 import { TbLanguageHiragana } from "react-icons/tb";
 import { RiEnglishInput } from "react-icons/ri";
-import { SiCplusplus, SiC, SiSolidity } from "react-icons/si";
-import { FaPython, FaHtml5, FaJava, FaLinux } from "react-icons/fa";
+import { SiCplusplus } from "react-icons/si";
+import { FaPython, FaJava, FaLinux } from "react-icons/fa";
 import { PiFileSqlDuotone } from "react-icons/pi";
-import { FaGit } from "react-icons/fa6";
 
 
 export default function Skills() {
@@ -59,18 +56,12 @@ export default function Skills() {
         "Japanese": TbLanguageHiragana,
         "English": RiEnglishInput,
         "Python": FaPython,
-        "C++": SiCplusplus,
-        "C": SiC,
+        "C/C++": SiCplusplus,
         "JavaScript": IoLogoJavascript,
         "Linux": FaLinux,
-        "HTML/CSS": FaHtml5,
         "Java": FaJava,
-        "Solidity": SiSolidity,
         "SQL": PiFileSqlDuotone,
-        "Git": FaGit
     }
-
-    const { colorMode } = useColorMode();
 
     const renderSubSkills = (subskills) => {
         return subskills.map((subskill, index) => {

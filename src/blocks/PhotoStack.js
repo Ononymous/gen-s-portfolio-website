@@ -12,20 +12,14 @@ import {
     Link,
     Button,
     Wrap,
-    Menu,
-    MenuItem,
-    MenuButton,
-    MenuList,
 } from '@chakra-ui/react';
 
-import { FaLinkedinIn } from 'react-icons/fa'
+import { FaLinkedinIn, FaRegNewspaper } from 'react-icons/fa'
 import { FiGithub, FiMail } from 'react-icons/fi'
-import { ChevronDownIcon } from '@chakra-ui/icons';
 
 import photo from '../images/photo.jpg';
 import { useColorMode } from '@chakra-ui/react';
-import FullResume from '../images/FullResume.pdf'
-import BackResume from '../images/BackResume.pdf'
+import Resume from '../images/Resume.pdf'
 
 import '../App.css'
 
@@ -71,7 +65,7 @@ function PhotoStack() {
                         </Text>
                     </Heading>
                     <Text color={'gray.500'} fontSize={{ md: 'md', lg: 'lg' }}>
-                        4th year CS major BS/MS student at UCSB, passionate about Machine Learning, Computer Networking, Security, OS, and Distributed Systems. <br/>
+                        CS MS student at UCSB, passionate about Computer Networking, Distributed Systems, Machine Learning, and Operating Systems. <br/>
                         My goal is to become a developer who can bring real value to the world through my work.
                     </Text>
                     <Wrap spacing={3} align="center" justify="left" w="100%">
@@ -95,34 +89,17 @@ function PhotoStack() {
                             </Button>
                         </Link>
 
-                        <Menu>
-                            <MenuButton
-                                as={Button}
-                                leftIcon={<ChevronDownIcon />}
-                                variant={colorMode === "light" ? "solid" : "outline"}
-                                colorScheme={"orange"}
-                            >
-                                Resume
-                            </MenuButton>
-                            <MenuList>
-                                <MenuItem
-                                    onClick={(event) => {
-                                        event.preventDefault();
-                                        window.open(FullResume);
-                                    }}
-                                >
-                                    Full-Stack
-                                </MenuItem>
-                                <MenuItem
-                                    onClick={(event) => {
-                                        event.preventDefault();
-                                        window.open(BackResume);
-                                    }}
-                                >
-                                    System
-                                </MenuItem>
-                            </MenuList>
-                        </Menu>
+                        <Button
+                            colorScheme={"orange"}
+                            variant={colorMode === "light" ? "solid" : "outline"}
+                            leftIcon={<FaRegNewspaper />}
+                            onClick={(event) => {
+                                event.preventDefault();
+                                window.open(Resume);
+                            }}
+                        >
+                            Resume
+                        </Button>
 
                         <Link href="mailto:gtamada@cs.ucsb.edu" isExternal>
                             <Button

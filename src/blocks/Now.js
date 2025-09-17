@@ -10,7 +10,7 @@ function Now(){
         boxShadow="dark-lg"
         rounded={"2xl"}>
 
-            <Heading
+            {/* <Heading
             lineHeight={1.5}
             fontWeight={600}
             marginTop={{xl:"4", md:"3", base:"2"}}
@@ -28,7 +28,7 @@ function Now(){
             <br/>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
                 Our Lab focuses on research in the areas of cloud computing, edge computing, and IoT.
-            </Text>
+            </Text> */}
 
             <Heading
             lineHeight={1.5}
@@ -43,11 +43,11 @@ function Now(){
                 </Text>
             </Heading>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
-                I am currently a 4th year Computer Science major at the University of California, Santa Barbara (UCSB), progressing through the BS/MS program with an expected completion in June 2026.
+                I am currently a Computer Science master at the University of California, Santa Barbara (UCSB), progressing through the BS/MS program with an expected completion in June 2026.
             </Text>
             <br/>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
-                I am taking Runtime Systems (CMPSC 263) and Distributed Systems (CMPSC 271) this quarter.
+                I am taking AI for Science (CMPSC 291A), Neural Information Retrieval (CMPSC 291A), and Computational Geometry (CMPSC 235) this quarter.
             </Text>
 
             <Heading

@@ -32,12 +32,8 @@
         ]
     },
     {
-        "name": "C++",
+        "name": "C/C++",
         "level": 90
-    },
-    {
-        "name": "C",
-        "level": 85
     },
     {
         "name": "JavaScript",
@@ -64,10 +60,6 @@
             "PostgreSQL",
             "MySQL"
         ]
-    },
-    {
-        "name": "HTML/CSS",
-        "level": 70
     },
     {
         "name": "Java",
