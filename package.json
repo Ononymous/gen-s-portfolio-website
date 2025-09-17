@@ -1,6 +1,9 @@
 {
   "name": "gen-s-portfolio-website",
   "version": "0.1.0",
+  "engines": {
+    "node": "22.x"
+  },
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",
