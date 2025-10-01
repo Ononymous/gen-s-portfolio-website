@@ -47,7 +47,7 @@ function Now(){
             </Text>
             <br/>
             <Text fontSize={{ base: 'md', lg: 'lg' }}>
-                I am taking AI for Science (CMPSC 291A), Neural Information Retrieval (CMPSC 291A), and Computational Geometry (CMPSC 235) this quarter.
+                I am taking Scalable Internet Services (CMPSC 291A), Neural Information Retrieval (CMPSC 291A), and Computational Geometry (CMPSC 235) this quarter.
             </Text>
 
             <Heading
