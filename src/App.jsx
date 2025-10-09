@@ -2,9 +2,9 @@ import React from "react";
 import "./App.css" 
 
 import PhotoStack from "./blocks/PhotoStack"
-import Now from "./blocks/Now.js";
-import Experiences from "./blocks/Experiences.js";
-import Skills from "./blocks/Skills.js";
+import Now from "./blocks/Now";
+import Experiences from "./blocks/Experiences";
+import Skills from "./blocks/Skills";
 
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer";

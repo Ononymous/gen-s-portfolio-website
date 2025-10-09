@@ -5,7 +5,6 @@ import ExpCards from '../components/ExpCards';
 import projects from '../data/projects.json'
 import { useState } from 'react';
 
-
 function Experiences(){
     const [type, setType] = useState('all');
 

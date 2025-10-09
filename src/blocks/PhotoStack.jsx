@@ -48,7 +48,7 @@ function PhotoStack() {
                         alt={'selfie'}
                         fit={'contain'}
                         align={'center'}
-                        w={'100%'}
+                        borderRadius={'2xl'}
                         h={'100%'}
                         src={photo}
                     />
