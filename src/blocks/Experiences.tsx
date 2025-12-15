@@ -74,9 +74,9 @@ const Experiences = () => {
           >
             <Tab onClick={() => setFilter('all')}>All</Tab>
             <Tab onClick={() => setFilter('ai')}>Machine Learning</Tab>
-            <Tab onClick={() => setFilter('front')}>Frontend</Tab>
-            <Tab onClick={() => setFilter('back')}>Backend</Tab>
             <Tab onClick={() => setFilter('system')}>System</Tab>
+            <Tab onClick={() => setFilter('back')}>Backend</Tab>
+            <Tab onClick={() => setFilter('front')}>Frontend</Tab>
             <Tab onClick={() => setFilter('mobile')}>Mobile</Tab>
           </TabList>
         </Tabs>
