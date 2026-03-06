@@ -39,10 +39,10 @@ const Now = () => {
       <Text fontSize={{ base: 'md', lg: 'lg' }}>
         I am currently a Computer Science master at the University of California, Santa Barbara (UCSB), progressing through the BS/MS program with an expected completion in June 2026.
       </Text>
-      {/* <br />
+      <br />
       <Text fontSize={{ base: 'md', lg: 'lg' }}>
-        I am taking Scalable Internet Services (CMPSC 291A), Neural Information Retrieval (CMPSC 291A), and Computational Geometry (CMPSC 235) this quarter.
-      </Text> */}
+        I am taking Information Theory and Trustworthy ML (CMPSC 292F), Advanced Computer Vision (CMPSC 281B), and currently TAing for CMPSC 148 (Project Course) at UCSB.
+      </Text>
 
       {/* <Heading
         lineHeight={1.5}
