@@ -9,6 +9,7 @@ export interface Project {
   title: string;
   description: string[];
   image: string;
+  imageFit?: 'cover' | 'contain';
   links: ProjectLink[];
   tags: string[];
   type: string[];

@@ -1,5 +1,77 @@
 [
     {
+        "title": "A Hardware DHCP Client Tile for Beehive: Acquiring an IP Without a CPU",
+        "description": [
+            "M.S. project at UCSB ArchLab (advised by Prof. Jonathan Balkind) adding a CPU-free DHCP client to Beehive, a NoC-based hardware network stack for direct-attached FPGA accelerators.",
+            "Implemented the full DORA lease lifecycle as a single tile in SystemVerilog: lease FSM (INIT → SELECTING → REQUESTING → BOUND → RENEWING → REBINDING), T1/T2 lease counters, retransmit timer, and an LFSR-randomized xid; tile broadcasts BIND/EXPIRE notifications across the NoC so peer tiles bind automatically with no host involvement.",
+            "Verified with 32 cocotb/Verilator unit, edge-case, and Apiary micro-OS integration tests across both stock-Beehive (512-bit) and Cohort (256-bit) NoC widths; reaches DHCP BOUND in 285 cycles using 0 CPU cycles — roughly 550x faster than the equivalent software path running on an Ariane RISC-V core."
+        ],
+        "image": "dhcp.png",
+        "imageFit": "contain",
+        "links": [
+            {
+                "url": "https://github.com/beehive-fpga/beehive/tree/dhcp_tile",
+                "text": "Beehive (dhcp_tile)"
+            },
+            {
+                "url": "https://github.com/beehive-fpga/apiary_os/tree/dhcp-integration",
+                "text": "Apiary OS (dhcp-integration)"
+            }
+        ],
+        "tags": ["Small Team", "2026-27", "SystemVerilog", "Python", "cocotb", "Verilator", "FPGA", "Computer Networking", "Hardware"],
+        "type": ["system"]
+    },
+    {
+        "title": "Studying Safety Fragility in Modern Lightweight Whitebox LLMs",
+        "description": [
+            "Studying how fragile safety alignment is in the newest generation of small open-weight language models, using Qwen-3.5-4B and Gemma-4-E2B-it as side-by-side subjects.",
+            "Jailbroke both models under four interventions and compared them directly: benign supervised fine-tuning, adversarial SFT, preference-inverted DPO, and abliteration.",
+            "Across families, abliteration was by far the most effective and cheapest attack (~5–10 minutes, no gradients), while preference-inverted DPO barely moved refusal at all.",
+            "Re-implemented abliteration from scratch on an M5 MacBook Air (Apple MPS, gradient-free) and packaged the result as 4-bit Ollama and LiteRT-LM models runnable on Android edge devices, showing the attack is deployable on consumer-grade hardware."
+        ],
+        "image": "abliteration.png",
+        "imageFit": "contain",
+        "links": [],
+        "tags": ["Small Team", "2026-27", "Python", "PyTorch", "LLM", "Machine Learning", "Model Alignment"],
+        "type": ["ai"]
+    },
+    {
+        "title": "Zero-Shot Video Moment Retrieval on Long-Form Surveillance Videos",
+        "description": [
+            "Tackling how to quickly retrieve specific events from hour-long surveillance footage given a natural language query.",
+            "Built a zero-shot CLIP-based pipeline that indexes frames offline (CLIP ViT-B/32 at 1 fps) and answers each query in milliseconds via per-video z-score normalization, multi-scale sliding windows, watershed merging, score-weighted boundary refinement, and temporal NMS.",
+            "Matched or exceeded fully supervised baselines (MMN, 2D-TAN, MomentDiff) on the UCA / UCF-Crime benchmark without any task-specific training."
+        ],
+        "image": "vmr.png",
+        "imageFit": "contain",
+        "links": [
+            {
+                "url": "https://github.com/edisonnchen/281b-project",
+                "text": "Github"
+            }
+        ],
+        "tags": ["Small Team", "2026-27", "Python", "PyTorch", "CLIP", "Computer Vision", "Information Retrieval"],
+        "type": ["ai"]
+    },
+    {
+        "title": "Deep Learning with Differential Privacy (DP-SGD)",
+        "description": [
+            "Replicating Abadi et al.'s DP-SGD, a foundational method for training neural networks with provable per-record privacy guarantees.",
+            "Implemented per-example gradient clipping with Gaussian noise injection and the moments accountant for tighter privacy bookkeeping over many training steps; added vectorization for training speed.",
+            "Evaluated across CIFAR-10 (with a frozen CIFAR-100 feature extractor), MNIST, and Fashion-MNIST, sweeping noise scale, clipping norm, and lot size to characterize the privacy-utility tradeoff."
+        ],
+        "image": "dpsgd.png",
+        "imageFit": "contain",
+        "links": [
+            {
+                "url": "https://github.com/Ononymous/292f-project",
+                "text": "Github"
+            }
+        ],
+        "tags": ["Small Team", "2026-27", "Python", "PyTorch", "Machine Learning", "Differential Privacy"],
+        "type": ["ai"]
+    },
+    {
         "title": "Fine-tuning CLaMP 3's symbolic encoder using LoRA",
         "description": [
             "Implemented Low-Rank Adaptation (LoRA) to fine-tune the symbolic encoder of CLaMP 3, a state-of-the-art model for music information retrieval (MIR).",
@@ -7,6 +79,7 @@
             "Achieved significant performance improvements on downstream tasks such as text-to-music and music-to-text MIR, while reducing computational costs compared to full model fine-tuning."
         ],
         "image": "lora.png",
+        "imageFit": "contain",
         "links": [
             {
                 "url": "https://sanderwood.github.io/clamp3/",
@@ -62,6 +135,7 @@
             "Successfully disrupted the feature-identifying capabilities of image-processing models."
         ],
         "image": "refract.png",
+        "imageFit": "contain",
         "links": [
             {
                 "url": "https://refract-two.vercel.app/",

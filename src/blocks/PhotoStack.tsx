@@ -64,9 +64,9 @@ const PhotoStack = () => {
             </Text>
           </Heading>
           <Text color="gray.500" fontSize={{ md: 'md', lg: 'lg' }}>
-            CS MS student at UCSB, passionate about Computer Networking, Distributed Systems, Machine Learning, and Operating Systems.
+            Incoming Software Engineer at Arista Networks. Recent CS M.S. graduate from UCSB, passionate about Computer Networking, Distributed Systems, Machine Learning, and Operating Systems.
             <br />
-            My goal is to become a developer who can bring real value to the world through my work.
+            My goal is to be a developer who ships work that brings real value to the people using it.
           </Text>
           <Wrap spacing={3} align="center" justify="left" w="100%">
             <Link href="https://github.com/Ononymous" isExternal>

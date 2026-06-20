@@ -22,8 +22,17 @@
             "Cuda",
             "Pytest",
             "PyTorch",
+            "Transformers",
+            "PEFT (LoRA)",
+            "open_clip",
+            "Opacus",
+            "ChromaDB",
+            "FAISS",
+            "bitsandbytes",
             "OpenCV",
             "NumPy",
+            "Pandas",
+            "scikit-learn",
             "Streamlit",
             "Matplotlib",
             "Anaconda",
@@ -34,6 +43,18 @@
     {
         "name": "C/C++",
         "level": 90
+    },
+    {
+        "name": "SystemVerilog",
+        "level": 80,
+        "subclass": [
+            "Verilator",
+            "cocotb",
+            "FuseSoC",
+            "Questa/ModelSim",
+            "Vivado",
+            "OpenPiton"
+        ]
     },
     {
         "name": "JavaScript",

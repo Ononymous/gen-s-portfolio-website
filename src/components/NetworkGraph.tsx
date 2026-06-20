@@ -299,7 +299,7 @@ const NetworkGraph: React.FC<NetworkGraphProps> = ({ data, viewModes }) => {
 
   const renderProjectDetail = (node: GraphNode) => {
     if (!node.project) return null;
-    const { title, description, image, links, tags } = node.project;
+    const { title, description, image, imageFit = 'cover', links, tags } = node.project;
 
     return (
       <Card
@@ -335,7 +335,7 @@ const NetworkGraph: React.FC<NetworkGraphProps> = ({ data, viewModes }) => {
               alt={title}
               maxW={{ base: '100%', md: '200px' }}
               maxH="200px"
-              objectFit="cover"
+              objectFit={imageFit}
               rounded="md"
             />
             

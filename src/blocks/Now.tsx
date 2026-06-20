@@ -13,16 +13,16 @@ const Now = () => {
       <Heading
         lineHeight={1.5}
         fontWeight={600}
-        marginTop={{ xl: '7', md: '4', base: '2' }}
+        marginTop={{ xl: '4', md: '3', base: '2' }}
         marginBottom={{ xl: '7', md: '4', base: '2' }}
         fontSize={{ base: '2xl', sm: '3xl', lg: '4xl' }}
       >
         <Text as="span" position="relative">
-          Research
+          Experience
         </Text>
       </Heading>
       <Text fontSize={{ base: 'md', lg: 'lg' }}>
-        Currently working in UCSB ArchLab under Professor Balkind on research related to hardware acceleration, hardware network stack, and FPGA as a whole.
+        Incoming Software Engineer at Arista Networks, starting September 2026 — returning to the Layer 1 Network team I interned with in 2025.
       </Text>
 
       <Heading
@@ -37,14 +37,14 @@ const Now = () => {
         </Text>
       </Heading>
       <Text fontSize={{ base: 'md', lg: 'lg' }}>
-        I am currently a Computer Science master at the University of California, Santa Barbara (UCSB), progressing through the BS/MS program with an expected completion in June 2026.
+        M.S. in Computer Science at the University of California, Santa Barbara (UCSB), graduated June 2026 through the BS/MS program.
       </Text>
       <br />
       <Text fontSize={{ base: 'md', lg: 'lg' }}>
-        I am taking Information Theory and Trustworthy ML (CMPSC 292F), Advanced Computer Vision (CMPSC 281B), and currently TAing for CMPSC 148 (Project Course) at UCSB.
+        M.S. project: <i>A Hardware DHCP Client Tile for Beehive</i>, advised by Prof. Jonathan Balkind in the UCSB ArchLab: designing a CPU-free hardware DHCP client for FPGA-based network stacks.
       </Text>
 
-      {/* <Heading
+      <Heading
         lineHeight={1.5}
         fontWeight={600}
         marginTop={{ xl: '7', md: '4', base: '2' }}
@@ -52,16 +52,16 @@ const Now = () => {
         fontSize={{ base: '2xl', sm: '3xl', lg: '4xl' }}
       >
         <Text as="span" position="relative">
-          Organizations
+          Teaching
         </Text>
       </Heading>
       <Text fontSize={{ base: 'md', lg: 'lg' }}>
-        Have participated in the project series of UCSB Data Science Club, Coders SB, SB Hacks in the past, and have successfully risen up the ranks in each of them.
+        Teaching Assistant at UCSB for CMPSC 148 (Computer Science Project Course) in Winter 2026–27.
       </Text>
       <br />
       <Text fontSize={{ base: 'md', lg: 'lg' }}>
-        Attended previous Finalist Panel for the UCSB Data Science Club for supporting the club's growth and development.
-      </Text> */}
+        Teaching Assistant at UCSB for CMPSC 32 (Advanced Topics in Object-Oriented Computing) in Spring 2026–27, where I worked with the professor to rework the course content with additional OS and C-language topics.
+      </Text>
     </Box>
   );
 };

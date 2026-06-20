@@ -5,6 +5,7 @@ interface ExpCardsProps {
   title: string;
   description: string[];
   image: string;
+  imageFit?: 'cover' | 'contain';
   links: { text: string; url: string }[];
   tags: string[];
 }
@@ -12,7 +13,7 @@ interface ExpCardsProps {
 const renderList = <T,>(items: T[], renderItem: (item: T, index: number) => ReactNode) =>
   items.map((item, index) => renderItem(item, index));
 
-const ExpCards: FC<ExpCardsProps> = ({ title, description, image, links, tags }) => {
+const ExpCards: FC<ExpCardsProps> = ({ title, description, image, imageFit = 'cover', links, tags }) => {
   return (
     <Card
       direction={{ base: 'column', md: 'row' }}
@@ -24,7 +25,7 @@ const ExpCards: FC<ExpCardsProps> = ({ title, description, image, links, tags })
       ml="2"
     >
       <Image
-        objectFit="cover"
+        objectFit={imageFit}
         w={{ base: '100%', md: '40%' }}
         maxH={{ base: '30vh', md: '100%' }}
         src={`/projects/${image}`}
