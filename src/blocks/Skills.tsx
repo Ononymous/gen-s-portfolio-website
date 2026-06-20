@@ -15,6 +15,7 @@ import {
 } from '@chakra-ui/react';
 import type { IconType } from 'react-icons';
 import { IoLanguage, IoLogoJavascript } from 'react-icons/io5';
+import { PiCircuitryLight } from "react-icons/pi";
 import { TbLanguageHiragana } from 'react-icons/tb';
 import { RiEnglishInput } from 'react-icons/ri';
 import { SiCplusplus } from 'react-icons/si';
@@ -42,6 +43,7 @@ const iconMap: Record<string, IconType> = {
   Linux: FaLinux,
   Java: FaJava,
   SQL: PiFileSqlDuotone,
+  'SystemVerilog': PiCircuitryLight,
 };
 
 const labelFromLevel = (level: number): string => {

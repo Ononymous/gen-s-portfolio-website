@@ -41,6 +41,20 @@
         ]
     },
     {
+        "name": "JavaScript",
+        "level": 90,
+        "subclass": [
+            "Next.js",
+            "Jest testing",
+            "Node.js",
+            "React.js",
+            "Expo Mobile",
+            "React Native",
+            "Tailwind CSS",
+            "Vue.js"
+        ]
+    },
+    {
         "name": "C/C++",
         "level": 90
     },
@@ -54,20 +68,6 @@
             "Questa/ModelSim",
             "Vivado",
             "OpenPiton"
-        ]
-    },
-    {
-        "name": "JavaScript",
-        "level": 85,
-        "subclass": [
-            "Next.js",
-            "Jest testing",
-            "Node.js",
-            "React.js",
-            "Expo Mobile",
-            "React Native",
-            "Tailwind CSS",
-            "Vue.js"
         ]
     },
     {
